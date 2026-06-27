@@ -143,9 +143,8 @@ function officialCard(article, source) {
   card.rel = "noopener noreferrer";
 
   const img = document.createElement("img");
-  const usesIcon = !article.thumbnail;
-  img.className = `thumb ${usesIcon ? "is-icon" : ""}`;
-  img.src = toAssetUrl(article.thumbnail || article.favicon || source.favicon || DEFAULT_THUMB);
+  img.className = "thumb is-icon";
+  img.src = toAssetUrl(article.favicon || source.favicon || DEFAULT_THUMB);
   img.alt = "";
   img.loading = "lazy";
 
