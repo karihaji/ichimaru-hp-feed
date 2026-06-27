@@ -101,8 +101,10 @@
       "siteName": "T-MAX BOWL",
       "baseUrl": "https://www.t-maxbowl.com/",
       "categoryGroup": "ボウリング",
-      "favicon": "assets/site-icons/t-max-bowl.png",
-      "officialIconSource": "https://www.t-maxbowl.com/images/head_logo.png",
+      "favicon": "assets/site-icons/t-max-bowl.ico",
+      "officialIconSource": "https://www.t-maxbowl.com/images/favicon.ico",
+      "listIcon": "assets/site-icons/t-max-bowl.png",
+      "officialListIconSource": "https://www.t-maxbowl.com/images/head_logo.png",
       "sources": [
         {
           "type": "home-section",

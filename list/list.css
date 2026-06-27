@@ -180,6 +180,15 @@ input:focus-visible,
   padding: 22px;
 }
 
+.article-card[data-source-id="sunlight-zone"] .thumb.is-icon {
+  background: #c71f2d;
+}
+
+.article-card[data-source-id="t-max-bowl"] .thumb.is-icon {
+  background: #000;
+  padding: 30px;
+}
+
 .article-body {
   display: grid;
   align-content: start;

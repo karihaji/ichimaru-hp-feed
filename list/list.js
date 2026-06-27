@@ -4,6 +4,7 @@ const PAGE_SIZE = 16;
 
 const app = {
   articles: [],
+  sources: new Map(),
   visibleCount: PAGE_SIZE,
   filters: {
     source: "",
@@ -20,7 +21,11 @@ attachEvents();
 
 async function loadData() {
   try {
-    const articles = await getJson("official-articles.json");
+    const [articles, config] = await Promise.all([
+      getJson("official-articles.json"),
+      getJson("sources.config.json")
+    ]);
+    app.sources = new Map((config.officialSources || []).map((source) => [source.sourceId, source]));
     app.articles = Array.isArray(articles)
       ? articles.sort((a, b) => String(b.publishedAt || "").localeCompare(String(a.publishedAt || "")))
       : [];
@@ -146,14 +151,15 @@ function filteredArticles() {
 function articleCard(article) {
   const card = document.createElement("a");
   card.className = "article-card";
+  card.dataset.sourceId = article.sourceId || "";
   card.href = article.url || "#";
   card.target = "_blank";
   card.rel = "noopener noreferrer";
 
+  const sourceConfig = app.sources.get(article.sourceId);
   const img = document.createElement("img");
-  const usesIcon = !article.thumbnail;
-  img.className = `thumb ${usesIcon ? "is-icon" : ""}`;
-  img.src = toAssetUrl(article.thumbnail || article.favicon || DEFAULT_THUMB);
+  img.className = "thumb is-icon";
+  img.src = toAssetUrl(sourceConfig?.listIcon || sourceConfig?.favicon || article.favicon || DEFAULT_THUMB);
   img.alt = "";
   img.loading = "lazy";
 
