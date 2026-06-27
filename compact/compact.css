@@ -365,9 +365,47 @@ h2 {
 }
 
 .feed-footer {
+  display: grid;
+  justify-items: end;
+  gap: 8px;
   padding: 10px 2px 0;
   font-size: 0.76rem;
   text-align: right;
+}
+
+.list-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 148px;
+  min-height: 42px;
+  padding: 8px 18px;
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.88rem;
+  font-weight: 800;
+  line-height: 1.2;
+  text-decoration: none;
+  box-shadow: 0 8px 18px rgb(15 113 128 / 18%);
+  transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease, border-color 160ms ease;
+}
+
+.list-button:focus-visible {
+  border-color: var(--accent-strong);
+  outline: none;
+  box-shadow: var(--focus), var(--shadow-hover);
+  transform: translateY(-1px);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .list-button:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent-strong);
+    background: var(--accent-strong);
+    box-shadow: var(--shadow-hover);
+  }
 }
 
 @media (max-width: 760px) {
@@ -435,6 +473,14 @@ h2 {
 
   .store-state {
     text-align: left;
+  }
+
+  .feed-footer {
+    justify-items: stretch;
+  }
+
+  .list-button {
+    width: 100%;
   }
 }
 
