@@ -220,6 +220,11 @@ input:focus-visible,
   padding: 30px;
 }
 
+.article-card[data-source-id="ichimaru-grp"] .thumb.is-icon {
+  background: #093065;
+  padding: 30px;
+}
+
 .article-body {
   display: grid;
   align-content: start;
@@ -382,6 +387,10 @@ input:focus-visible,
 
   .article-card[data-source-id="t-max-bowl"] .thumb.is-icon {
     padding: 16px;
+  }
+
+  .article-card[data-source-id="ichimaru-grp"] .thumb.is-icon {
+    padding: 12px;
   }
 
   .article-body {

@@ -128,7 +128,7 @@ function toArticle(anchor, block, date, image, source, target, fetchedAt) {
   const normalizedUrl = normalizeUrl(anchor.url);
   if (!normalizedUrl) return null;
 
-  const title = cleanupTitle(anchor.text);
+  const title = cleanupTitle(preferredTitle(anchor, block, source));
   if (!title || title.length < 3) return null;
 
   const text = stripHtml(block);
@@ -163,6 +163,16 @@ function usableThumbnail(value = "") {
   if (!value) return "";
   if (/top_no_img|no[_-]?image|noimage|icon-phone|favicon|logo|gnav\d*/i.test(value)) return "";
   return value;
+}
+
+function preferredTitle(anchor, block, source) {
+  if (source.sourceId === "ichimaru-grp") {
+    const heading = block.match(/<h[1-4]\b[^>]*>([\s\S]*?)<\/h[1-4]>/i)?.[1];
+    const title = cleanupTitle(stripHtml(heading || ""));
+    if (title) return title;
+  }
+
+  return anchor.text;
 }
 
 function mergeArticle(previous, next) {

@@ -287,6 +287,11 @@ h2 {
   padding: 10px;
 }
 
+.official-card[data-source-id="ichimaru-grp"] .thumb.is-icon {
+  background: #093065;
+  padding: 6px;
+}
+
 .date {
   margin: 4px 0 6px;
   font-size: 0.78rem;

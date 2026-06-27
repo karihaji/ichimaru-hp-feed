@@ -7,7 +7,8 @@ const COMPACT_OFFICIAL_ORDER = [
   "tsurutaxi",
   "sunlight-zone",
   "t-max-bowl",
-  "tsuruhome"
+  "tsuruhome",
+  "ichimaru-grp"
 ];
 
 const state = {

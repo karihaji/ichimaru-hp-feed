@@ -1,5 +1,6 @@
 {
   "officialArticleGroups": [
+    "グループ",
     "海運",
     "海運・物流",
     "ボウリング",
@@ -150,6 +151,22 @@
           "label": "新着情報",
           "url": "https://tsuruhome.com/news/",
           "itemType": "新着情報"
+        }
+      ]
+    },
+    {
+      "sourceId": "ichimaru-grp",
+      "siteName": "市丸グループ",
+      "baseUrl": "https://ichimaru-grp.jp/",
+      "categoryGroup": "グループ",
+      "favicon": "assets/site-icons/ichimaru-grp.png",
+      "officialIconSource": "https://ichimaru-grp.jp/wp-content/themes/twentysixteen/images/common/ttl_logo.png",
+      "sources": [
+        {
+          "type": "post-list",
+          "label": "お知らせ",
+          "url": "https://ichimaru-grp.jp/news",
+          "itemType": "お知らせ"
         }
       ]
     }
