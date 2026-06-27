@@ -264,7 +264,11 @@ export function toIsoDate(value = "") {
 
   match = text.match(/(\d{1,2})月\s*(\d{1,2})日/);
   if (match) {
-    const year = new Date(Date.now() + 9 * 60 * 60 * 1000).getUTCFullYear();
+    const now = new Date(Date.now() + 9 * 60 * 60 * 1000);
+    let year = now.getUTCFullYear();
+    const candidate = new Date(Date.UTC(year, Number(match[1]) - 1, Number(match[2])));
+    const tomorrow = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + 1));
+    if (candidate > tomorrow) year -= 1;
     return `${year}-${pad(match[1])}-${pad(match[2])}`;
   }
 

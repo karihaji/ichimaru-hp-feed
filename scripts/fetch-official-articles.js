@@ -34,7 +34,7 @@ const fetchedAt = nowJst();
 const logs = [];
 const articlesById = new Map(
   existing
-    .filter((item) => item.url)
+    .filter((item) => item.url && item.publishedAt)
     .map((item) => [item.id || hash(normalizeUrl(item.url)), item])
 );
 
@@ -46,10 +46,7 @@ for (const source of config.officialSources || []) {
 
       for (const article of articles) {
         const previous = articlesById.get(article.id);
-        articlesById.set(article.id, {
-          ...previous,
-          ...article
-        });
+        articlesById.set(article.id, mergeArticle(previous, article));
       }
 
       logs.push({
@@ -74,11 +71,7 @@ for (const source of config.officialSources || []) {
 }
 
 const articles = Array.from(articlesById.values())
-  .sort((a, b) => {
-    const byDate = String(b.publishedAt || "").localeCompare(String(a.publishedAt || ""));
-    if (byDate !== 0) return byDate;
-    return String(b.fetchedAt || "").localeCompare(String(a.fetchedAt || ""));
-  })
+  .sort(compareArticles)
   .slice(0, MAX_ARTICLES);
 
 await writeJson("official-articles.json", articles);
@@ -87,8 +80,10 @@ await upsertFetchLogs(logs);
 console.log(`official-articles: ${articles.length}件保存`);
 
 function extractArticles(html, source, target, fetchedAt) {
-  const blocks = collectBlocks(html);
+  const contentHtml = html;
+  const blocks = collectBlocks(contentHtml);
   const candidates = [];
+  let sourceOrder = 0;
 
   for (const block of blocks) {
     const date = findDate(block);
@@ -102,15 +97,22 @@ function extractArticles(html, source, target, fetchedAt) {
       const itemDate = findDate(anchor.text) || findDate(context) || date;
       const itemImage = extractImage(context, target.url) || image;
       const article = toArticle(anchor, context, itemDate, itemImage, source, target, fetchedAt);
-      if (article) candidates.push(article);
+      if (article) {
+        article.sourceOrder = sourceOrder++;
+        candidates.push(article);
+      }
     }
   }
 
   if (!candidates.length) {
-    const anchors = extractAnchors(html, target.url).filter((anchor) => isArticleLink(anchor, source, target));
+    const anchors = extractAnchors(contentHtml, target.url).filter((anchor) => isArticleLink(anchor, source, target));
     for (const anchor of anchors.slice(0, 20)) {
-      const article = toArticle(anchor, htmlAround(html, anchor.url), "", "", source, target, fetchedAt);
-      if (article) candidates.push(article);
+      const context = contextAround(contentHtml, anchor.index);
+      const article = toArticle(anchor, context, findDate(anchor.text) || findDate(context), extractImage(context, target.url), source, target, fetchedAt);
+      if (article) {
+        article.sourceOrder = sourceOrder++;
+        candidates.push(article);
+      }
     }
   }
 
@@ -130,7 +132,12 @@ function toArticle(anchor, block, date, image, source, target, fetchedAt) {
   if (!title || title.length < 3) return null;
 
   const text = stripHtml(block);
-  const subCategory = SUB_CATEGORIES.find((label) => text.includes(label)) || "";
+  const publishedAt = date || findDate(text);
+  if (!publishedAt) return null;
+
+  const subCategory = SUB_CATEGORIES.find((label) => title.includes(label)) ||
+    SUB_CATEGORIES.find((label) => text.includes(label)) ||
+    "";
   const important = /重要|大事|緊急|運休|欠航/.test(text) || /重要|大事|緊急/.test(title);
 
   return {
@@ -142,13 +149,67 @@ function toArticle(anchor, block, date, image, source, target, fetchedAt) {
     subCategory,
     title,
     url: normalizedUrl,
-    publishedAt: date || findDate(text),
+    publishedAt,
     important,
     thumbnail: image || "",
     favicon: source.favicon || "",
     fetchedAt,
+    sourceOrder: 0,
     sourceId: source.sourceId
   };
+}
+
+function mergeArticle(previous, next) {
+  if (!previous) return next;
+
+  return {
+    ...previous,
+    ...next,
+    publishedAt: bestPublishedAt(previous.publishedAt, next.publishedAt),
+    important: Boolean(previous.important || next.important),
+    thumbnail: next.thumbnail || previous.thumbnail || "",
+    favicon: next.favicon || previous.favicon || "",
+    subCategory: next.subCategory || previous.subCategory || "",
+    sourceOrder: Math.min(
+      Number.isFinite(previous.sourceOrder) ? previous.sourceOrder : Number.POSITIVE_INFINITY,
+      Number.isFinite(next.sourceOrder) ? next.sourceOrder : Number.POSITIVE_INFINITY
+    )
+  };
+}
+
+function compareArticles(a, b) {
+  const byDate = String(b.publishedAt || "").localeCompare(String(a.publishedAt || ""));
+  if (byDate !== 0) return byDate;
+
+  if (a.sourceId === b.sourceId) {
+    const bySourceOrder = (a.sourceOrder ?? 9999) - (b.sourceOrder ?? 9999);
+    if (bySourceOrder !== 0) return bySourceOrder;
+  }
+
+  const byUrlNumber = articleNumber(b.url) - articleNumber(a.url);
+  if (byUrlNumber !== 0) return byUrlNumber;
+
+  return String(b.fetchedAt || "").localeCompare(String(a.fetchedAt || ""));
+}
+
+function articleNumber(url = "") {
+  const match = url.match(/(?:\/|-)(\d+)(?:\.html)?\/?$/);
+  return match ? Number(match[1]) : 0;
+}
+
+function bestPublishedAt(previousDate = "", nextDate = "") {
+  const validDates = [previousDate, nextDate].filter(Boolean).filter((date) => !isFutureDate(date));
+  if (validDates.length) return validDates.sort().at(-1);
+  return [previousDate, nextDate].filter(Boolean).sort().at(-1) || "";
+}
+
+function isFutureDate(value = "") {
+  const date = new Date(`${value}T00:00:00+09:00`);
+  if (Number.isNaN(date.getTime())) return false;
+
+  const now = new Date(Date.now() + 9 * 60 * 60 * 1000);
+  const tomorrow = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + 1));
+  return date > tomorrow;
 }
 
 function isArticleLink(anchor, source, target) {
@@ -156,29 +217,39 @@ function isArticleLink(anchor, source, target) {
   const url = absoluteUrl(anchor.url, target.url);
   if (!url.startsWith(source.baseUrl)) return false;
   if (/\.(jpg|jpeg|png|gif|webp|pdf|zip)(\?|$)/i.test(url)) return false;
-  if (/#|\/category\/?$|\/tag\/?$/.test(url)) return false;
+  if (/#|\/category\/?|\/tag\/?|\/page\/\d+\/?$/i.test(url)) return false;
 
   const title = cleanupTitle(anchor.text);
   if (!title || title.length < 3) return false;
-  if (/^(more|read more|詳しく|詳細|一覧|次へ|前へ)$/i.test(title)) return false;
+  if (/^(more|read more|詳しく|詳細|一覧|次へ|前へ|ホーム|home|\d+|>)$/i.test(title)) return false;
 
   const path = new URL(url).pathname;
-  return /news|information|info|topics|event|league|post|20\d{2}/i.test(path) || target.type.startsWith("home");
+  const normalizedPath = path.replace(/\/$/, "") || "/";
+  const targetPath = new URL(target.url).pathname.replace(/\/$/, "") || "/";
+  const basePath = new URL(source.baseUrl).pathname.replace(/\/$/, "") || "/";
+
+  if (normalizedPath === targetPath || normalizedPath === basePath) return false;
+  if (isStaticPath(normalizedPath)) return false;
+
+  return /\/post-\d+\/?$/i.test(path) ||
+    /\/\d+\/?$/i.test(path) ||
+    /\/\d+\.html$/i.test(path) ||
+    /\/(?:news|information|info|topics)\/[^/]+\/?$/i.test(path);
 }
+
+function isStaticPath(path) {
+  return /\/(?:terms|privacy|company|contact|access|guide|faq|link|sitemap|recruit|business|howto|facility|movein|daycare|floor-guide|price-list|event-calendar|bowling-school|reserve|amusement|terminal|timetable|about|agreement|ship-guide|boarding-|platform-|tanegashima-|conditions-of-carriage|translate)(?:\/|$)/i.test(path);
+}
+
 
 function cleanupTitle(value = "") {
   return value
     .replace(/\s+/g, " ")
     .replace(/^20\d{2}[./-]\d{1,2}[./-]\d{1,2}\s*/, "")
     .replace(/^20\d{2}年\s*\d{1,2}月\s*\d{1,2}日\s*/, "")
+    .replace(/^(重要なお知らせ|大事なお知らせ|おすすめ情報|お知らせ|新着情報|イベント情報|大会結果)\s+/, "")
     .replace(/^(詳しく見る|詳細|more)\s*/i, "")
     .trim();
-}
-
-function htmlAround(html, url) {
-  const index = html.indexOf(url);
-  if (index < 0) return html.slice(0, 2000);
-  return html.slice(Math.max(0, index - 1000), index + 1000);
 }
 
 function contextAround(html, index, size = 900) {
