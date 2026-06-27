@@ -410,7 +410,7 @@ h2 {
 
 @media (max-width: 760px) {
   .feed-shell {
-    padding: 12px;
+    padding: 8px;
   }
 
   .feed-header {
@@ -419,9 +419,8 @@ h2 {
   }
 
   .operation-list,
-  .official-list,
-  .store-list {
-    grid-template-columns: 1fr;
+  .official-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .tabs {
@@ -432,7 +431,7 @@ h2 {
 
 @media (max-width: 460px) {
   .feed-shell {
-    padding: 8px;
+    padding: 6px;
   }
 
   .operation-band,
@@ -440,39 +439,113 @@ h2 {
     border-radius: 8px;
   }
 
+  .operation-band {
+    margin-bottom: 8px;
+    padding: 10px;
+  }
+
+  .tab-panel {
+    padding: 10px;
+  }
+
+  .tabs {
+    padding: 8px;
+  }
+
+  .tab {
+    min-height: 38px;
+    padding: 7px 10px;
+    font-size: 0.84rem;
+  }
+
   .section-heading {
     align-items: flex-start;
     flex-direction: column;
     gap: 4px;
+    margin-bottom: 8px;
   }
 
   .updated-text {
     white-space: normal;
   }
 
-  .operation-card,
-  .store-link {
+  .operation-list,
+  .official-list,
+  .store-list {
+    gap: 8px;
+  }
+
+  .operation-card {
     align-items: flex-start;
     flex-direction: column;
+    gap: 6px;
+    min-height: 64px;
+    padding: 8px;
+  }
+
+  .source-name {
+    font-size: 0.8rem;
+    line-height: 1.35;
+  }
+
+  .status-label {
+    min-height: 24px;
+    padding: 2px 7px;
+    font-size: 0.7rem;
   }
 
   .official-card {
-    grid-template-columns: 52px minmax(0, 1fr);
-    min-height: 104px;
-    padding: 10px;
+    grid-template-columns: 42px minmax(0, 1fr);
+    gap: 7px;
+    min-height: 84px;
+    padding: 8px;
   }
 
   .thumb {
-    width: 52px;
-    height: 52px;
+    width: 42px;
+    height: 42px;
   }
 
   .title {
-    font-size: 0.9rem;
+    font-size: 0.78rem;
+    line-height: 1.4;
+  }
+
+  .date {
+    margin: 2px 0 3px;
+    font-size: 0.66rem;
+  }
+
+  .meta {
+    display: none;
   }
 
   .store-state {
     text-align: left;
+  }
+
+  .store-card {
+    min-height: auto;
+    padding: 10px;
+  }
+
+  .store-title {
+    font-size: 0.9rem;
+  }
+
+  .store-links {
+    gap: 6px;
+    margin-top: 8px;
+  }
+
+  .store-link {
+    min-height: 36px;
+    padding: 7px 8px;
+  }
+
+  .platform,
+  .store-state {
+    font-size: 0.72rem;
   }
 
   .feed-footer {

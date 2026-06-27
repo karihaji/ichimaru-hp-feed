@@ -354,73 +354,116 @@ input:focus-visible,
 
 @media (max-width: 520px) {
   .archive-shell {
-    padding: 8px;
+    padding: 6px;
   }
 
-  .filters,
-  .article-grid {
-    grid-template-columns: 1fr;
+  .archive-header {
+    margin-bottom: 8px;
+  }
+
+  .eyebrow,
+  .lead {
+    display: none;
+  }
+
+  h1 {
+    font-size: 1.12rem;
+  }
+
+  h2 {
+    font-size: 0.96rem;
+  }
+
+  .filters {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    margin-bottom: 8px;
   }
 
   .filters,
   .archive-results {
-    padding: 12px;
+    padding: 10px;
+  }
+
+  label {
+    gap: 4px;
+  }
+
+  label span {
+    font-size: 0.7rem;
+  }
+
+  select,
+  input {
+    min-height: 36px;
+    padding: 6px 8px;
+    font-size: 0.82rem;
+  }
+
+  .article-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
   }
 
   .article-card {
-    grid-template-columns: 96px minmax(0, 1fr);
-    grid-template-rows: minmax(124px, auto);
-    min-height: 124px;
+    grid-template-columns: 72px minmax(0, 1fr);
+    grid-template-rows: minmax(96px, auto);
+    min-height: 96px;
   }
 
   .thumb {
     width: 100%;
     height: 100%;
-    min-height: 124px;
+    min-height: 96px;
     aspect-ratio: auto;
     border-right: 1px solid var(--line);
     border-bottom: 0;
   }
 
   .thumb.is-icon {
-    padding: 14px;
+    padding: 10px;
   }
 
   .article-card[data-source-id="t-max-bowl"] .thumb.is-icon {
-    padding: 16px;
-  }
-
-  .article-card[data-source-id="ichimaru-grp"] .thumb.is-icon {
     padding: 12px;
   }
 
+  .article-card[data-source-id="ichimaru-grp"] .thumb.is-icon {
+    padding: 9px;
+  }
+
   .article-body {
-    gap: 5px;
-    padding: 10px 12px;
+    gap: 3px;
+    padding: 8px 10px;
   }
 
   .source-row {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 5px;
+    align-items: center;
+    flex-direction: row;
+    gap: 6px;
   }
 
   .source-name {
     width: 100%;
+    font-size: 0.78rem;
+  }
+
+  .badge {
+    display: none;
   }
 
   .date {
-    font-size: 0.74rem;
+    font-size: 0.68rem;
   }
 
   .title {
-    font-size: 0.9rem;
-    line-height: 1.5;
+    font-size: 0.84rem;
+    line-height: 1.42;
     -webkit-line-clamp: 2;
   }
 
   .meta {
-    font-size: 0.72rem;
+    display: none;
   }
 
   .section-heading {

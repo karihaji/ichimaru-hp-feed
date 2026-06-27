@@ -1,11 +1,13 @@
 const DATA_PATH = "../data/";
 const DEFAULT_THUMB = "../assets/default-thumb.svg";
 const PAGE_SIZE = 16;
+const MOBILE_PAGE_SIZE = 6;
+const MOBILE_QUERY = "(max-width: 620px)";
 
 const app = {
   articles: [],
   sources: new Map(),
-  visibleCount: PAGE_SIZE,
+  visibleCount: currentPageSize(),
   filters: {
     source: "",
     category: "",
@@ -74,9 +76,16 @@ function attachEvents() {
   });
 
   $("#more-button").addEventListener("click", () => {
-    app.visibleCount += PAGE_SIZE;
+    app.visibleCount += currentPageSize();
     render();
   });
+
+  const mobileMedia = window.matchMedia(MOBILE_QUERY);
+  if (typeof mobileMedia.addEventListener === "function") {
+    mobileMedia.addEventListener("change", resetAndRender);
+  } else {
+    mobileMedia.addListener(resetAndRender);
+  }
 }
 
 function populateFilters() {
@@ -99,8 +108,12 @@ function fillSelect(select, values, labelFn = (value) => value) {
 }
 
 function resetAndRender() {
-  app.visibleCount = PAGE_SIZE;
+  app.visibleCount = currentPageSize();
   render();
+}
+
+function currentPageSize() {
+  return window.matchMedia(MOBILE_QUERY).matches ? MOBILE_PAGE_SIZE : PAGE_SIZE;
 }
 
 function render() {
