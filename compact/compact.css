@@ -236,6 +236,10 @@ h2 {
   padding: 6px;
 }
 
+.official-card[data-source-id="sunlight-zone"] .thumb.is-icon {
+  background: #c71f2d;
+}
+
 .date {
   margin: 4px 0 6px;
   font-size: 0.78rem;

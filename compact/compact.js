@@ -138,6 +138,7 @@ function renderOfficial() {
 function officialCard(article, source) {
   const card = document.createElement("a");
   card.className = "official-card";
+  card.dataset.sourceId = article.sourceId || source.sourceId || "";
   card.href = article.url || source.baseUrl;
   card.target = "_blank";
   card.rel = "noopener noreferrer";
