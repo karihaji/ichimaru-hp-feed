@@ -305,19 +305,20 @@ input:focus-visible,
 .more-button {
   min-height: 42px;
   min-width: 160px;
-  border: 1px solid var(--accent);
+  border: 1px solid #018bee;
   border-radius: 8px;
-  background: var(--accent);
+  background: #018bee;
   color: #fff;
   font: inherit;
   font-weight: 800;
   cursor: pointer;
+  box-shadow: 0 8px 18px rgb(1 139 238 / 22%);
   transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease, border-color 160ms ease;
 }
 
 .more-button:hover {
-  background: var(--accent-strong);
-  border-color: var(--accent-strong);
+  background: #006fbe;
+  border-color: #006fbe;
 }
 
 .archive-footer {
