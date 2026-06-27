@@ -175,6 +175,11 @@ input:focus-visible,
   border-bottom: 1px solid var(--line);
 }
 
+.thumb.is-icon {
+  object-fit: contain;
+  padding: 22px;
+}
+
 .article-body {
   display: grid;
   align-content: start;

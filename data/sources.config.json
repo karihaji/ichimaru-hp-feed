@@ -12,7 +12,8 @@
       "siteName": "コスモライン",
       "baseUrl": "https://cosmoline.jp/",
       "categoryGroup": "海運",
-      "favicon": "assets/site-icons/cosmoline.svg",
+      "favicon": "assets/site-icons/cosmoline.png",
+      "officialIconSource": "https://cosmoline.jp/wp-content/themes/cosmoline_202405/favicon/apple-touch-icon.png",
       "sources": [
         {
           "type": "post-list",
@@ -33,7 +34,8 @@
       "siteName": "フェリー屋久島2",
       "baseUrl": "https://ferryyakusima2.com/",
       "categoryGroup": "海運",
-      "favicon": "assets/site-icons/ferry-yakusima2.svg",
+      "favicon": "assets/site-icons/ferry-yakusima2.png",
+      "officialIconSource": "https://ferryyakusima2.com/wp-content/uploads/2024/03/cropped-icon-1-192x192.png",
       "sources": [
         {
           "type": "home-latest",
@@ -61,6 +63,7 @@
       "baseUrl": "https://kyusho-port.jp/",
       "categoryGroup": "海運・物流",
       "favicon": "assets/site-icons/kyusho-port.svg",
+      "officialIconSource": "https://kyusho-port.jp/wp-content/themes/kyusho-port-202504/favicon/favicon.svg",
       "sources": [
         {
           "type": "post-list",
@@ -75,7 +78,8 @@
       "siteName": "サンライトゾーン",
       "baseUrl": "https://sunlight-zone.com/",
       "categoryGroup": "ボウリング",
-      "favicon": "assets/site-icons/sunlight-zone.svg",
+      "favicon": "assets/site-icons/sunlight-zone.png",
+      "officialIconSource": "https://sunlight-zone.com/images/head_logo.png",
       "sources": [
         {
           "type": "home-section",
@@ -97,7 +101,8 @@
       "siteName": "T-MAX BOWL",
       "baseUrl": "https://www.t-maxbowl.com/",
       "categoryGroup": "ボウリング",
-      "favicon": "assets/site-icons/t-max-bowl.svg",
+      "favicon": "assets/site-icons/t-max-bowl.png",
+      "officialIconSource": "https://www.t-maxbowl.com/images/head_logo.png",
       "sources": [
         {
           "type": "home-section",
@@ -119,7 +124,8 @@
       "siteName": "鶴丸交通",
       "baseUrl": "https://tsurutaxi.com/",
       "categoryGroup": "タクシー",
-      "favicon": "assets/site-icons/tsurutaxi.svg",
+      "favicon": "assets/site-icons/tsurutaxi.jpg",
+      "officialIconSource": "https://tsurutaxi.com/cms/wp-content/uploads/2021/01/cropped-logo-192x192.jpg",
       "sources": [
         {
           "type": "post-list",
@@ -134,7 +140,8 @@
       "siteName": "鶴丸ホーム明和",
       "baseUrl": "https://tsuruhome.com/",
       "categoryGroup": "介護",
-      "favicon": "assets/site-icons/tsuruhome.svg",
+      "favicon": "assets/site-icons/tsuruhome.png",
+      "officialIconSource": "https://tsuruhome.com/wp-content/uploads/2023/06/tsurumaruhome_logo-1.png",
       "sources": [
         {
           "type": "post-list",

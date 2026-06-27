@@ -31,6 +31,12 @@ npm run fetch
 
 取得結果は `data/*.json` に保存されます。1サイトの取得に失敗しても全体処理は継続し、`data/fetch-log.json` に記録します。
 
+公式HP由来のサイトアイコンを更新する場合:
+
+```bash
+npm run fetch:icons
+```
+
 ## GitHub Pages
 
 GitHub Pagesは repository root を公開元にしてください。`.github/workflows/update-feed.yml` が1日4回データ取得を実行し、差分があれば `data/*.json` をコミットします。

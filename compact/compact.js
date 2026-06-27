@@ -143,8 +143,9 @@ function officialCard(article, source) {
   card.rel = "noopener noreferrer";
 
   const img = document.createElement("img");
-  img.className = "thumb";
-  img.src = toAssetUrl(article.thumbnail || source.favicon || DEFAULT_THUMB);
+  const usesIcon = !article.thumbnail;
+  img.className = `thumb ${usesIcon ? "is-icon" : ""}`;
+  img.src = toAssetUrl(article.thumbnail || article.favicon || source.favicon || DEFAULT_THUMB);
   img.alt = "";
   img.loading = "lazy";
 
@@ -179,7 +180,7 @@ function pendingOfficialCard(source) {
   card.rel = "noopener noreferrer";
 
   const img = document.createElement("img");
-  img.className = "thumb";
+  img.className = "thumb is-icon";
   img.src = toAssetUrl(source.favicon || DEFAULT_THUMB);
   img.alt = "";
 

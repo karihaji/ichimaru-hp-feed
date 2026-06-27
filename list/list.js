@@ -151,7 +151,8 @@ function articleCard(article) {
   card.rel = "noopener noreferrer";
 
   const img = document.createElement("img");
-  img.className = "thumb";
+  const usesIcon = !article.thumbnail;
+  img.className = `thumb ${usesIcon ? "is-icon" : ""}`;
   img.src = toAssetUrl(article.thumbnail || article.favicon || DEFAULT_THUMB);
   img.alt = "";
   img.loading = "lazy";

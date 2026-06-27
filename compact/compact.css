@@ -231,6 +231,11 @@ h2 {
   background: #fff;
 }
 
+.thumb.is-icon {
+  object-fit: contain;
+  padding: 7px;
+}
+
 .date {
   margin: 4px 0 6px;
   font-size: 0.78rem;
