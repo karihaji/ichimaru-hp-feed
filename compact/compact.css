@@ -380,20 +380,20 @@ h2 {
   min-width: 148px;
   min-height: 42px;
   padding: 8px 18px;
-  border: 1px solid var(--accent);
+  border: 1px solid #018bee;
   border-radius: 8px;
-  background: var(--accent);
+  background: #018bee;
   color: #fff;
   font-size: 0.88rem;
   font-weight: 800;
   line-height: 1.2;
   text-decoration: none;
-  box-shadow: 0 8px 18px rgb(15 113 128 / 18%);
+  box-shadow: 0 8px 18px rgb(1 139 238 / 22%);
   transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease, border-color 160ms ease;
 }
 
 .list-button:focus-visible {
-  border-color: var(--accent-strong);
+  border-color: #006fbe;
   outline: none;
   box-shadow: var(--focus), var(--shadow-hover);
   transform: translateY(-1px);
@@ -402,8 +402,8 @@ h2 {
 @media (hover: hover) and (pointer: fine) {
   .list-button:hover {
     transform: translateY(-2px);
-    border-color: var(--accent-strong);
-    background: var(--accent-strong);
+    border-color: #006fbe;
+    background: #006fbe;
     box-shadow: var(--shadow-hover);
   }
 }
