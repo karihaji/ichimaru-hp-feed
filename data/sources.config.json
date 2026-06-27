@@ -12,7 +12,7 @@
       "siteName": "コスモライン",
       "baseUrl": "https://cosmoline.jp/",
       "categoryGroup": "海運",
-      "favicon": "assets/default-favicon.svg",
+      "favicon": "assets/site-icons/cosmoline.svg",
       "sources": [
         {
           "type": "post-list",
@@ -33,7 +33,7 @@
       "siteName": "フェリー屋久島2",
       "baseUrl": "https://ferryyakusima2.com/",
       "categoryGroup": "海運",
-      "favicon": "assets/default-favicon.svg",
+      "favicon": "assets/site-icons/ferry-yakusima2.svg",
       "sources": [
         {
           "type": "home-latest",
@@ -60,7 +60,7 @@
       "siteName": "九商ポートサービス",
       "baseUrl": "https://kyusho-port.jp/",
       "categoryGroup": "海運・物流",
-      "favicon": "assets/default-favicon.svg",
+      "favicon": "assets/site-icons/kyusho-port.svg",
       "sources": [
         {
           "type": "post-list",
@@ -75,7 +75,7 @@
       "siteName": "サンライトゾーン",
       "baseUrl": "https://sunlight-zone.com/",
       "categoryGroup": "ボウリング",
-      "favicon": "assets/default-favicon.svg",
+      "favicon": "assets/site-icons/sunlight-zone.svg",
       "sources": [
         {
           "type": "home-section",
@@ -97,7 +97,7 @@
       "siteName": "T-MAX BOWL",
       "baseUrl": "https://www.t-maxbowl.com/",
       "categoryGroup": "ボウリング",
-      "favicon": "assets/default-favicon.svg",
+      "favicon": "assets/site-icons/t-max-bowl.svg",
       "sources": [
         {
           "type": "home-section",
@@ -119,7 +119,7 @@
       "siteName": "鶴丸交通",
       "baseUrl": "https://tsurutaxi.com/",
       "categoryGroup": "タクシー",
-      "favicon": "assets/default-favicon.svg",
+      "favicon": "assets/site-icons/tsurutaxi.svg",
       "sources": [
         {
           "type": "post-list",
@@ -134,7 +134,7 @@
       "siteName": "鶴丸ホーム明和",
       "baseUrl": "https://tsuruhome.com/",
       "categoryGroup": "介護",
-      "favicon": "assets/default-favicon.svg",
+      "favicon": "assets/site-icons/tsuruhome.svg",
       "sources": [
         {
           "type": "post-list",

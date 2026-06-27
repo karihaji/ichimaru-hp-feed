@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" role="img" aria-label="Tsuru Home">
+  <rect width="96" height="96" rx="18" fill="#6f7f54"/>
+  <path d="M20 48l28-23 28 23v28H27V53h42v23" fill="#fff" opacity=".95"/>
+  <path d="M37 58h22v18H37z" fill="#d9e8c7"/>
+  <circle cx="48" cy="44" r="7" fill="#d88993"/>
+  <text x="48" y="88" fill="#fff" font-family="Arial, sans-serif" font-size="17" font-weight="700" text-anchor="middle">TH</text>
+</svg>

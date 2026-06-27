@@ -152,7 +152,7 @@ function articleCard(article) {
 
   const img = document.createElement("img");
   img.className = "thumb";
-  img.src = toAssetUrl(article.thumbnail || DEFAULT_THUMB);
+  img.src = toAssetUrl(article.thumbnail || article.favicon || DEFAULT_THUMB);
   img.alt = "";
   img.loading = "lazy";
 

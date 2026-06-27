@@ -151,12 +151,18 @@ function toArticle(anchor, block, date, image, source, target, fetchedAt) {
     url: normalizedUrl,
     publishedAt,
     important,
-    thumbnail: image || "",
+    thumbnail: usableThumbnail(image),
     favicon: source.favicon || "",
     fetchedAt,
     sourceOrder: 0,
     sourceId: source.sourceId
   };
+}
+
+function usableThumbnail(value = "") {
+  if (!value) return "";
+  if (/top_no_img|no[_-]?image|noimage|icon-phone|favicon|logo|gnav\d*/i.test(value)) return "";
+  return value;
 }
 
 function mergeArticle(previous, next) {
@@ -167,7 +173,7 @@ function mergeArticle(previous, next) {
     ...next,
     publishedAt: bestPublishedAt(previous.publishedAt, next.publishedAt),
     important: Boolean(previous.important || next.important),
-    thumbnail: next.thumbnail || previous.thumbnail || "",
+    thumbnail: usableThumbnail(next.thumbnail) || usableThumbnail(previous.thumbnail) || "",
     favicon: next.favicon || previous.favicon || "",
     subCategory: next.subCategory || previous.subCategory || "",
     sourceOrder: Math.min(
