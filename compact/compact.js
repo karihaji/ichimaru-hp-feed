@@ -1,5 +1,14 @@
 const DATA_PATH = "../data/";
 const DEFAULT_THUMB = "../assets/default-thumb.svg";
+const COMPACT_OFFICIAL_ORDER = [
+  "cosmoline",
+  "ferry-yakusima2",
+  "kyusho-port",
+  "tsurutaxi",
+  "sunlight-zone",
+  "t-max-bowl",
+  "tsuruhome"
+];
 
 const state = {
   officialArticles: [],
@@ -110,7 +119,7 @@ function renderOfficial() {
   const list = $("#official-list");
   list.replaceChildren();
 
-  const sources = state.config?.officialSources || [];
+  const sources = orderedOfficialSources(state.config?.officialSources || []);
   const latestBySource = new Map();
 
   for (const article of state.officialArticles) {
@@ -145,7 +154,7 @@ function officialCard(article, source) {
 
   const img = document.createElement("img");
   img.className = "thumb is-icon";
-  img.src = toAssetUrl(article.favicon || source.favicon || DEFAULT_THUMB);
+  img.src = toAssetUrl(compactIcon(article, source));
   img.alt = "";
   img.loading = "lazy";
 
@@ -175,13 +184,14 @@ function officialCard(article, source) {
 function pendingOfficialCard(source) {
   const card = document.createElement("a");
   card.className = "official-card";
+  card.dataset.sourceId = source.sourceId || "";
   card.href = source.baseUrl || "#";
   card.target = "_blank";
   card.rel = "noopener noreferrer";
 
   const img = document.createElement("img");
   img.className = "thumb is-icon";
-  img.src = toAssetUrl(source.favicon || DEFAULT_THUMB);
+  img.src = toAssetUrl(compactIcon(null, source));
   img.alt = "";
 
   const body = document.createElement("div");
@@ -332,6 +342,20 @@ function latestCheckedAt(items) {
 
 function compareDate(a, b) {
   return String(a || "").localeCompare(String(b || ""));
+}
+
+function orderedOfficialSources(sources) {
+  const byId = new Map(sources.map((source) => [source.sourceId, source]));
+  const ordered = COMPACT_OFFICIAL_ORDER.map((sourceId) => byId.get(sourceId)).filter(Boolean);
+  const orderedIds = new Set(COMPACT_OFFICIAL_ORDER);
+  return ordered.concat(sources.filter((source) => !orderedIds.has(source.sourceId)));
+}
+
+function compactIcon(article, source) {
+  if (source?.sourceId === "t-max-bowl" && source.listIcon) {
+    return source.listIcon;
+  }
+  return article?.favicon || source?.favicon || DEFAULT_THUMB;
 }
 
 function formatDate(value) {
