@@ -41,7 +41,7 @@ a {
 .feed-shell {
   width: min(1100px, 100%);
   margin: 0 auto;
-  padding: clamp(10px, 2.4vw, 18px);
+  padding: clamp(6px, 1.8vw, 12px);
 }
 
 .feed-header {
