@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>市丸グループ 外部発信・更新情報</title>
+    <link rel="icon" href="../assets/default-favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="compact.css">
+  </head>
+  <body>
+    <main class="feed-shell" aria-labelledby="page-title">
+      <header class="feed-header">
+        <div>
+          <p class="eyebrow">市丸グループ</p>
+          <h1 id="page-title">外部発信・更新情報</h1>
+        </div>
+        <p class="lead">各社・各施設の公式HP記事、運航情報、遊技店舗外部掲載ページの更新状況を表示します。</p>
+      </header>
+
+      <section class="operation-band" aria-labelledby="operation-title">
+        <div class="section-heading">
+          <h2 id="operation-title">運航情報</h2>
+          <p id="operation-updated" class="updated-text">確認中</p>
+        </div>
+        <div id="operation-list" class="operation-list" aria-live="polite">
+          <p class="empty-message">運航情報を読み込んでいます。</p>
+        </div>
+      </section>
+
+      <section class="tab-area" aria-label="外部発信情報">
+        <div class="tabs" role="tablist" aria-label="表示切替">
+          <button id="tab-official" class="tab is-active" type="button" role="tab" aria-selected="true" aria-controls="panel-official">公式HP</button>
+          <button id="tab-store" class="tab" type="button" role="tab" aria-selected="false" aria-controls="panel-store">遊技店舗</button>
+        </div>
+
+        <div id="panel-official" class="tab-panel is-active" role="tabpanel" aria-labelledby="tab-official">
+          <div class="section-heading">
+            <h2>各サイト最新1件</h2>
+            <p id="official-count" class="updated-text">読み込み中</p>
+          </div>
+          <div id="official-list" class="official-list" aria-live="polite">
+            <p class="empty-message">公式HP記事を読み込んでいます。</p>
+          </div>
+        </div>
+
+        <div id="panel-store" class="tab-panel" role="tabpanel" aria-labelledby="tab-store" hidden>
+          <div class="section-heading">
+            <h2>外部掲載ページ</h2>
+            <p id="store-count" class="updated-text">読み込み中</p>
+          </div>
+          <div id="store-list" class="store-list" aria-live="polite">
+            <p class="empty-message">遊技店舗の更新状況を読み込んでいます。</p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="feed-footer">
+        <p id="last-updated">データ確認中</p>
+      </footer>
+    </main>
+
+    <script src="compact.js" type="module"></script>
+  </body>
+</html>

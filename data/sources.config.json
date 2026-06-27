@@ -1,0 +1,248 @@
+{
+  "officialArticleGroups": [
+    "海運",
+    "海運・物流",
+    "ボウリング",
+    "タクシー",
+    "介護"
+  ],
+  "officialSources": [
+    {
+      "sourceId": "cosmoline",
+      "siteName": "コスモライン",
+      "baseUrl": "https://cosmoline.jp/",
+      "categoryGroup": "海運",
+      "favicon": "assets/default-favicon.svg",
+      "sources": [
+        {
+          "type": "post-list",
+          "label": "お知らせ",
+          "url": "https://cosmoline.jp/news",
+          "itemType": "お知らせ"
+        }
+      ],
+      "operationStatus": {
+        "enabled": true,
+        "sourceUrl": "https://cosmoline.jp/",
+        "detailUrl": "https://cosmoline.jp/ship-information",
+        "label": "運航情報"
+      }
+    },
+    {
+      "sourceId": "ferry-yakusima2",
+      "siteName": "フェリー屋久島2",
+      "baseUrl": "https://ferryyakusima2.com/",
+      "categoryGroup": "海運",
+      "favicon": "assets/default-favicon.svg",
+      "sources": [
+        {
+          "type": "home-latest",
+          "label": "最近のお知らせ",
+          "url": "https://ferryyakusima2.com/",
+          "sectionLabel": "Latest News",
+          "itemType": "最近のお知らせ"
+        },
+        {
+          "type": "post-list",
+          "label": "お知らせ一覧",
+          "url": "https://ferryyakusima2.com/news/",
+          "itemType": "お知らせ"
+        }
+      ],
+      "operationStatus": {
+        "enabled": true,
+        "sourceUrl": "https://ferryyakusima2.com/",
+        "label": "運航状況"
+      }
+    },
+    {
+      "sourceId": "kyusho-port",
+      "siteName": "九商ポートサービス",
+      "baseUrl": "https://kyusho-port.jp/",
+      "categoryGroup": "海運・物流",
+      "favicon": "assets/default-favicon.svg",
+      "sources": [
+        {
+          "type": "post-list",
+          "label": "新着情報",
+          "url": "https://kyusho-port.jp/news",
+          "itemType": "新着情報"
+        }
+      ]
+    },
+    {
+      "sourceId": "sunlight-zone",
+      "siteName": "サンライトゾーン",
+      "baseUrl": "https://sunlight-zone.com/",
+      "categoryGroup": "ボウリング",
+      "favicon": "assets/default-favicon.svg",
+      "sources": [
+        {
+          "type": "home-section",
+          "label": "イベント情報",
+          "url": "https://sunlight-zone.com/",
+          "sectionLabel": "イベント情報",
+          "itemType": "イベント情報"
+        },
+        {
+          "type": "category-grouped-list",
+          "label": "大会結果",
+          "url": "https://sunlight-zone.com/category/league",
+          "itemType": "大会結果"
+        }
+      ]
+    },
+    {
+      "sourceId": "t-max-bowl",
+      "siteName": "T-MAX BOWL",
+      "baseUrl": "https://www.t-maxbowl.com/",
+      "categoryGroup": "ボウリング",
+      "favicon": "assets/default-favicon.svg",
+      "sources": [
+        {
+          "type": "home-section",
+          "label": "イベント情報",
+          "url": "https://www.t-maxbowl.com/",
+          "sectionLabel": "イベント情報",
+          "itemType": "イベント情報"
+        },
+        {
+          "type": "category-grouped-list",
+          "label": "T-MAXリーグ",
+          "url": "https://www.t-maxbowl.com/category/t-max-league",
+          "itemType": "T-MAXリーグ"
+        }
+      ]
+    },
+    {
+      "sourceId": "tsurutaxi",
+      "siteName": "鶴丸交通",
+      "baseUrl": "https://tsurutaxi.com/",
+      "categoryGroup": "タクシー",
+      "favicon": "assets/default-favicon.svg",
+      "sources": [
+        {
+          "type": "post-list",
+          "label": "新着情報",
+          "url": "https://tsurutaxi.com/information/",
+          "itemType": "新着情報"
+        }
+      ]
+    },
+    {
+      "sourceId": "tsuruhome",
+      "siteName": "鶴丸ホーム明和",
+      "baseUrl": "https://tsuruhome.com/",
+      "categoryGroup": "介護",
+      "favicon": "assets/default-favicon.svg",
+      "sources": [
+        {
+          "type": "post-list",
+          "label": "新着情報",
+          "url": "https://tsuruhome.com/news/",
+          "itemType": "新着情報"
+        }
+      ]
+    }
+  ],
+  "storeSources": [
+    {
+      "storeId": "dmm-10981",
+      "groupKey": "t-max-pride",
+      "storeName": "T-MAX PRIDE",
+      "platform": "DMMぱちタウン",
+      "url": "https://p-town.dmm.com/shops/kagoshima/10981"
+    },
+    {
+      "storeId": "dmm-10979",
+      "groupKey": "t-max-1000",
+      "storeName": "T-MAX 1000",
+      "platform": "DMMぱちタウン",
+      "url": "https://p-town.dmm.com/shops/kagoshima/10979"
+    },
+    {
+      "storeId": "dmm-11049",
+      "groupKey": "tanegashima-kamome",
+      "storeName": "T-MAX 種子島 鴨女店",
+      "platform": "DMMぱちタウン",
+      "url": "https://p-town.dmm.com/shops/kagoshima/11049"
+    },
+    {
+      "storeId": "dmm-11053",
+      "groupKey": "tanegashima-minato",
+      "storeName": "T-MAX 種子島 港店",
+      "platform": "DMMぱちタウン",
+      "url": "https://p-town.dmm.com/shops/kagoshima/11053"
+    },
+    {
+      "storeId": "dmm-11167",
+      "groupKey": "nakatane",
+      "storeName": "T-MAX 中種子店",
+      "platform": "DMMぱちタウン",
+      "url": "https://p-town.dmm.com/shops/kagoshima/11167"
+    },
+    {
+      "storeId": "dmm-11161",
+      "groupKey": "yakushima",
+      "storeName": "T-MAX 屋久島",
+      "platform": "DMMぱちタウン",
+      "url": "https://p-town.dmm.com/shops/kagoshima/11161"
+    },
+    {
+      "storeId": "pworld-t-maxamami1",
+      "groupKey": "amami1",
+      "storeName": "T-MAX 奄美1",
+      "platform": "P-WORLD",
+      "url": "https://www.p-world.co.jp/kagoshima/t-maxamami1.htm",
+      "linkOnlyFallback": true
+    },
+    {
+      "storeId": "pworld-t-max",
+      "groupKey": "t-max-pride",
+      "storeName": "T-MAX",
+      "platform": "P-WORLD",
+      "url": "https://www.p-world.co.jp/kagoshima/t-max.htm",
+      "linkOnlyFallback": true
+    },
+    {
+      "storeId": "pworld-t-max1000",
+      "groupKey": "t-max-1000",
+      "storeName": "T-MAX 1000",
+      "platform": "P-WORLD",
+      "url": "https://www.p-world.co.jp/kagoshima/t-max1000.htm",
+      "linkOnlyFallback": true
+    },
+    {
+      "storeId": "pworld-tsurumaru-nakatane",
+      "groupKey": "nakatane",
+      "storeName": "つるまる 中種子",
+      "platform": "P-WORLD",
+      "url": "https://www.p-world.co.jp/kagoshima/tsurumaru-nakatane.htm",
+      "linkOnlyFallback": true
+    },
+    {
+      "storeId": "pworld-new-turumaru",
+      "groupKey": "tanegashima-minato",
+      "storeName": "ニューつるまる",
+      "platform": "P-WORLD",
+      "url": "https://www.p-world.co.jp/kagoshima/new-turumaru.htm",
+      "linkOnlyFallback": true
+    },
+    {
+      "storeId": "pworld-yakutsurumaru",
+      "groupKey": "yakushima",
+      "storeName": "屋久つるまる",
+      "platform": "P-WORLD",
+      "url": "https://www.p-world.co.jp/kagoshima/yakutsurumaru.htm",
+      "linkOnlyFallback": true
+    },
+    {
+      "storeId": "pworld-turumalu-kamome",
+      "groupKey": "tanegashima-kamome",
+      "storeName": "つるまる カモメ",
+      "platform": "P-WORLD",
+      "url": "https://www.p-world.co.jp/kagoshima/turumalu-kamome.htm",
+      "linkOnlyFallback": true
+    }
+  ]
+}

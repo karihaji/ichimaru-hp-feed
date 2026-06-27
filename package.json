@@ -1,0 +1,18 @@
+{
+  "name": "ichimaru-hp-feed",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "市丸グループ 外部発信・更新情報パーツ",
+  "scripts": {
+    "fetch": "node scripts/fetch-official-articles.js && node scripts/fetch-operation-status.js && node scripts/fetch-store-status.js",
+    "fetch:official": "node scripts/fetch-official-articles.js",
+    "fetch:operation": "node scripts/fetch-operation-status.js",
+    "fetch:stores": "node scripts/fetch-store-status.js",
+    "validate": "node scripts/validate-data.js",
+    "serve": "node scripts/serve.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
