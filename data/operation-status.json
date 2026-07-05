@@ -5,7 +5,7 @@
     "statusLabel": "運休",
     "targetDate": "",
     "url": "https://cosmoline.jp/ship-information",
-    "checkedAt": "2026-07-05T08:12:18+09:00",
+    "checkedAt": "2026-07-05T13:47:10+09:00",
     "sourceId": "cosmoline-operation"
   },
   {
@@ -14,7 +14,7 @@
     "statusLabel": "運休",
     "targetDate": "",
     "url": "https://ferryyakusima2.com/",
-    "checkedAt": "2026-07-05T08:12:18+09:00",
+    "checkedAt": "2026-07-05T13:47:10+09:00",
     "sourceId": "ferry-yakusima2-operation"
   }
 ]
