@@ -5,7 +5,7 @@
     "statusLabel": "条件付運航",
     "targetDate": "2026-07-10",
     "url": "https://cosmoline.jp/ship-information",
-    "checkedAt": "2026-07-10T09:25:37+09:00",
+    "checkedAt": "2026-07-10T13:41:19+09:00",
     "sourceId": "cosmoline-operation",
     "statusSource": "https://cosmoline.jp/ship-information",
     "statusMethod": "operation-block",
@@ -62,11 +62,11 @@
     "statusLabel": "欠航",
     "targetDate": "2026-07-10",
     "url": "http://www.norimono-info.com/frame_set.php?disp=area&pref=kago",
-    "checkedAt": "2026-07-10T09:25:37+09:00",
+    "checkedAt": "2026-07-10T13:41:19+09:00",
     "sourceId": "ferry-yakusima2-operation",
     "statusSource": "http://www.norimono-info.com/area_main.php?disp=area&pref=kago&lang=",
     "statusMethod": "matched-block",
-    "statusEvidence": "鹿児島（本港南ふ頭）～屋久島（宮之浦港） ( 折田汽船（株） ) 7月9日・10日のフェリー屋久島２は海上シケのため鹿児島⇔屋久島間 欠航いたします。",
+    "statusEvidence": "鹿児島（本港南ふ頭）～屋久島（宮之浦港） ( 折田汽船（株） ) 7月10日・11日のフェリー屋久島２は海上シケのため鹿児島⇔屋久島間 欠航いたします。",
     "statusAgreement": "matched",
     "statusChecks": [
       {
@@ -74,7 +74,7 @@
         "targetDate": "2026-07-10",
         "statusSource": "http://www.norimono-info.com/area_main.php?disp=area&pref=kago&lang=",
         "statusMethod": "matched-block",
-        "statusEvidence": "鹿児島（本港南ふ頭）～屋久島（宮之浦港） ( 折田汽船（株） ) 7月9日・10日のフェリー屋久島２は海上シケのため鹿児島⇔屋久島間 欠航いたします。"
+        "statusEvidence": "鹿児島（本港南ふ頭）～屋久島（宮之浦港） ( 折田汽船（株） ) 7月10日・11日のフェリー屋久島２は海上シケのため鹿児島⇔屋久島間 欠航いたします。"
       },
       {
         "statusLabel": "欠航",
