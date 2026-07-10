@@ -10,6 +10,7 @@
     "fetch:official": "node scripts/fetch-official-articles.js",
     "fetch:operation": "node scripts/fetch-operation-status.js",
     "fetch:stores": "node scripts/fetch-store-status.js",
+    "test:operation": "node --test scripts/operation-status-parser.test.js",
     "validate": "node scripts/validate-data.js",
     "serve": "node scripts/serve.js"
   },

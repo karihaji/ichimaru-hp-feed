@@ -1,5 +1,21 @@
 [
   {
+    "scope": "operation-status",
+    "source": "コスモライン",
+    "url": "https://cosmoline.jp/ship-information",
+    "status": "ok",
+    "message": "条件付運航 (operation-block, matched)",
+    "checkedAt": "2026-07-10T09:25:37+09:00"
+  },
+  {
+    "scope": "operation-status",
+    "source": "フェリー屋久島2",
+    "url": "http://www.norimono-info.com/area_main.php?disp=area&pref=kago&lang=",
+    "status": "ok",
+    "message": "欠航 (matched-block, matched)",
+    "checkedAt": "2026-07-10T09:25:37+09:00"
+  },
+  {
     "scope": "store-status",
     "source": "DMMぱちタウン T-MAX PRIDE",
     "url": "https://p-town.dmm.com/shops/kagoshima/10981",
