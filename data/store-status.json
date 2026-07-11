@@ -3,85 +3,85 @@
     "type": "store-status",
     "storeId": "dmm-10981",
     "groupKey": "t-max-pride",
-    "storeName": "T-MAX PRIDE（鹿児島市 いづろ通駅）",
+    "storeName": "T-MAX PRIDE",
     "categoryGroup": "遊技店舗",
     "platform": "DMMぱちタウン",
     "url": "https://p-town.dmm.com/shops/kagoshima/10981",
-    "lastUpdatedLabel": "07/11（土）",
+    "lastUpdatedLabel": "",
     "latestInfoUpdatedLabel": "",
     "machineInfoUpdatedLabel": "",
-    "checkedAt": "2026-07-11T16:50:14+09:00",
-    "status": "ok"
+    "checkedAt": "2026-07-12T08:09:31+09:00",
+    "status": "failed"
   },
   {
     "type": "store-status",
     "storeId": "dmm-10979",
     "groupKey": "t-max-1000",
-    "storeName": "T-MAX新栄店（鹿児島市 二軒茶屋（鹿児島県）駅）",
+    "storeName": "T-MAX 1000",
     "categoryGroup": "遊技店舗",
     "platform": "DMMぱちタウン",
     "url": "https://p-town.dmm.com/shops/kagoshima/10979",
-    "lastUpdatedLabel": "07/11（土）",
+    "lastUpdatedLabel": "",
     "latestInfoUpdatedLabel": "",
     "machineInfoUpdatedLabel": "",
-    "checkedAt": "2026-07-11T16:50:14+09:00",
-    "status": "ok"
+    "checkedAt": "2026-07-12T08:09:31+09:00",
+    "status": "failed"
   },
   {
     "type": "store-status",
     "storeId": "dmm-11049",
     "groupKey": "tanegashima-kamome",
-    "storeName": "T-MAX種子島 鴨女店（西之表市）",
+    "storeName": "T-MAX 種子島 鴨女店",
     "categoryGroup": "遊技店舗",
     "platform": "DMMぱちタウン",
     "url": "https://p-town.dmm.com/shops/kagoshima/11049",
-    "lastUpdatedLabel": "07/08（水）",
+    "lastUpdatedLabel": "",
     "latestInfoUpdatedLabel": "",
     "machineInfoUpdatedLabel": "",
-    "checkedAt": "2026-07-11T16:50:14+09:00",
-    "status": "ok"
+    "checkedAt": "2026-07-12T08:09:31+09:00",
+    "status": "failed"
   },
   {
     "type": "store-status",
     "storeId": "dmm-11053",
     "groupKey": "tanegashima-minato",
-    "storeName": "T-MAX種子島 港店（西之表市）",
+    "storeName": "T-MAX 種子島 港店",
     "categoryGroup": "遊技店舗",
     "platform": "DMMぱちタウン",
     "url": "https://p-town.dmm.com/shops/kagoshima/11053",
-    "lastUpdatedLabel": "06/25（木）",
+    "lastUpdatedLabel": "",
     "latestInfoUpdatedLabel": "",
     "machineInfoUpdatedLabel": "",
-    "checkedAt": "2026-07-11T16:50:14+09:00",
-    "status": "ok"
+    "checkedAt": "2026-07-12T08:09:31+09:00",
+    "status": "failed"
   },
   {
     "type": "store-status",
     "storeId": "dmm-11167",
     "groupKey": "nakatane",
-    "storeName": "T-MAX中種子店（熊毛郡）",
+    "storeName": "T-MAX 中種子店",
     "categoryGroup": "遊技店舗",
     "platform": "DMMぱちタウン",
     "url": "https://p-town.dmm.com/shops/kagoshima/11167",
-    "lastUpdatedLabel": "07/09（木）",
+    "lastUpdatedLabel": "",
     "latestInfoUpdatedLabel": "",
     "machineInfoUpdatedLabel": "",
-    "checkedAt": "2026-07-11T16:50:14+09:00",
-    "status": "ok"
+    "checkedAt": "2026-07-12T08:09:31+09:00",
+    "status": "failed"
   },
   {
     "type": "store-status",
     "storeId": "dmm-11161",
     "groupKey": "yakushima",
-    "storeName": "T-MAX屋久島（熊毛郡）",
+    "storeName": "T-MAX 屋久島",
     "categoryGroup": "遊技店舗",
     "platform": "DMMぱちタウン",
     "url": "https://p-town.dmm.com/shops/kagoshima/11161",
-    "lastUpdatedLabel": "07/10（金）",
+    "lastUpdatedLabel": "",
     "latestInfoUpdatedLabel": "",
     "machineInfoUpdatedLabel": "",
-    "checkedAt": "2026-07-11T16:50:14+09:00",
-    "status": "ok"
+    "checkedAt": "2026-07-12T08:09:31+09:00",
+    "status": "failed"
   },
   {
     "type": "store-status",
@@ -94,7 +94,7 @@
     "lastUpdatedLabel": "2026/07/09",
     "latestInfoUpdatedLabel": "",
     "machineInfoUpdatedLabel": "",
-    "checkedAt": "2026-07-11T16:50:14+09:00",
+    "checkedAt": "2026-07-12T08:09:31+09:00",
     "status": "ok"
   },
   {
@@ -108,7 +108,7 @@
     "lastUpdatedLabel": "2026/07/11",
     "latestInfoUpdatedLabel": "",
     "machineInfoUpdatedLabel": "",
-    "checkedAt": "2026-07-11T16:50:14+09:00",
+    "checkedAt": "2026-07-12T08:09:31+09:00",
     "status": "ok"
   },
   {
@@ -122,7 +122,7 @@
     "lastUpdatedLabel": "2026/07/11",
     "latestInfoUpdatedLabel": "",
     "machineInfoUpdatedLabel": "",
-    "checkedAt": "2026-07-11T16:50:14+09:00",
+    "checkedAt": "2026-07-12T08:09:31+09:00",
     "status": "ok"
   },
   {
@@ -136,7 +136,7 @@
     "lastUpdatedLabel": "2026/07/11",
     "latestInfoUpdatedLabel": "",
     "machineInfoUpdatedLabel": "",
-    "checkedAt": "2026-07-11T16:50:14+09:00",
+    "checkedAt": "2026-07-12T08:09:31+09:00",
     "status": "ok"
   },
   {
@@ -150,7 +150,7 @@
     "lastUpdatedLabel": "2026/06/25",
     "latestInfoUpdatedLabel": "",
     "machineInfoUpdatedLabel": "",
-    "checkedAt": "2026-07-11T16:50:14+09:00",
+    "checkedAt": "2026-07-12T08:09:31+09:00",
     "status": "ok"
   },
   {
@@ -164,7 +164,7 @@
     "lastUpdatedLabel": "2026/07/11",
     "latestInfoUpdatedLabel": "",
     "machineInfoUpdatedLabel": "",
-    "checkedAt": "2026-07-11T16:50:14+09:00",
+    "checkedAt": "2026-07-12T08:09:31+09:00",
     "status": "ok"
   },
   {
@@ -178,7 +178,7 @@
     "lastUpdatedLabel": "2026/06/22",
     "latestInfoUpdatedLabel": "",
     "machineInfoUpdatedLabel": "",
-    "checkedAt": "2026-07-11T16:50:14+09:00",
+    "checkedAt": "2026-07-12T08:09:31+09:00",
     "status": "ok"
   }
 ]
