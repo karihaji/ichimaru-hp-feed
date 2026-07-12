@@ -5,7 +5,7 @@
     "statusLabel": "運休",
     "targetDate": "2026-07-12",
     "url": "https://cosmoline.jp/ship-information",
-    "checkedAt": "2026-07-12T15:08:28+09:00",
+    "checkedAt": "2026-07-12T17:11:42+09:00",
     "sourceId": "cosmoline-operation",
     "statusSource": "https://cosmoline.jp/ship-information",
     "statusMethod": "operation-block",
@@ -62,12 +62,12 @@
     "statusLabel": "運休",
     "targetDate": "2026-07-12",
     "url": "http://www.norimono-info.com/frame_set.php?disp=area&pref=kago",
-    "checkedAt": "2026-07-12T15:08:28+09:00",
+    "checkedAt": "2026-07-12T17:11:42+09:00",
     "sourceId": "ferry-yakusima2-operation",
     "statusSource": "http://www.norimono-info.com/area_main.php?disp=area&pref=kago&lang=",
     "statusMethod": "matched-block",
     "statusEvidence": "鹿児島（本港南ふ頭）～屋久島（宮之浦港） ( 折田汽船（株） ) 7月12日（日）屋久島行きフェリー屋久島２は計画運休のため鹿児島⇔屋久島間 運休いたします。",
-    "statusAgreement": "matched",
+    "statusAgreement": "single",
     "statusChecks": [
       {
         "statusLabel": "運休",
@@ -75,41 +75,6 @@
         "statusSource": "http://www.norimono-info.com/area_main.php?disp=area&pref=kago&lang=",
         "statusMethod": "matched-block",
         "statusEvidence": "鹿児島（本港南ふ頭）～屋久島（宮之浦港） ( 折田汽船（株） ) 7月12日（日）屋久島行きフェリー屋久島２は計画運休のため鹿児島⇔屋久島間 運休いたします。"
-      },
-      {
-        "statusLabel": "運休",
-        "targetDate": "2026-07-12",
-        "statusSource": "https://ferryyakusima2.com/",
-        "statusMethod": "status-label",
-        "statusEvidence": "運休"
-      },
-      {
-        "statusLabel": "運休",
-        "targetDate": "2026-07-12",
-        "statusSource": "https://ferryyakusima2.com/news",
-        "statusMethod": "status-label",
-        "statusEvidence": "運休"
-      },
-      {
-        "statusLabel": "運休",
-        "targetDate": "2026-07-12",
-        "statusSource": "https://ferryyakusima2.com/",
-        "statusMethod": "operation-block",
-        "statusEvidence": "運休"
-      },
-      {
-        "statusLabel": "運休",
-        "targetDate": "2026-07-12",
-        "statusSource": "https://ferryyakusima2.com/",
-        "statusMethod": "operation-block",
-        "statusEvidence": "運行状況 は 運休 です。"
-      },
-      {
-        "statusLabel": "運休",
-        "targetDate": "2026-07-12",
-        "statusSource": "https://ferryyakusima2.com/news",
-        "statusMethod": "operation-block",
-        "statusEvidence": "運休"
       }
     ]
   }
