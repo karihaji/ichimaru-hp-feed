@@ -3,56 +3,56 @@
     "type": "operation-status",
     "sourceName": "コスモライン",
     "statusLabel": "通常運航",
-    "targetDate": "2026-07-14",
+    "targetDate": "2026-07-15",
     "url": "https://cosmoline.jp/ship-information",
-    "checkedAt": "2026-07-14T16:57:31+09:00",
+    "checkedAt": "2026-07-15T08:10:26+09:00",
     "sourceId": "cosmoline-operation",
     "statusSource": "https://cosmoline.jp/ship-information",
     "statusMethod": "operation-block",
-    "statusEvidence": "運航情報 当日の運航状況は朝7時に発表いたします。 1週間先の予定は下記になります。 運航予定ですので変更があった場合は随時更新していきますのでご乗船予定のお客様はご確認の上お越しください。 7/14 通常運航予定 7/15 通常運航予定 7/16 通常運航予定 7/17 通常運航予定 7/18 通常運航予定 7/19 運休 7/20 通常運航予定",
+    "statusEvidence": "運航情報 当日の運航状況は朝7時に発表いたします。 1週間先の予定は下記になります。 運航予定ですので変更があった場合は随時更新していきますのでご乗船予定のお客様はご確認の上お越しください。 7/15 通常運航予定 7/16 通常運航予定 7/17 通常運航予定 7/18 通常運航予定 7/19 運休 7/20 通常運航予定 7/21 通常運航予定",
     "statusAgreement": "matched",
     "statusChecks": [
       {
         "statusLabel": "通常運航",
-        "targetDate": "2026-07-14",
+        "targetDate": "2026-07-15",
         "statusSource": "https://cosmoline.jp/ship-information",
         "statusMethod": "operation-block",
-        "statusEvidence": "運航情報 当日の運航状況は朝7時に発表いたします。 1週間先の予定は下記になります。 運航予定ですので変更があった場合は随時更新していきますのでご乗船予定のお客様はご確認の上お越しください。 7/14 通常運航予定 7/15 通常運航予定 7/16 通常運航予定 7/17 通常運航予定 7/18 通常運航予定 7/19 運休 7/20 通常運航予定"
+        "statusEvidence": "運航情報 当日の運航状況は朝7時に発表いたします。 1週間先の予定は下記になります。 運航予定ですので変更があった場合は随時更新していきますのでご乗船予定のお客様はご確認の上お越しください。 7/15 通常運航予定 7/16 通常運航予定 7/17 通常運航予定 7/18 通常運航予定 7/19 運休 7/20 通常運航予定 7/21 通常運航予定"
       },
       {
         "statusLabel": "通常運航",
-        "targetDate": "2026-07-14",
+        "targetDate": "2026-07-15",
         "statusSource": "https://cosmoline.jp/ship-information",
         "statusMethod": "dated-status-line",
-        "statusEvidence": "7/14 通常運航中 詳しくはこちら MENU 車両航送の ご予約はこちら TEL 099-222-827"
+        "statusEvidence": "7/15 通常運航中 詳しくはこちら MENU 車両航送の ご予約はこちら TEL 099-222-827"
       },
       {
         "statusLabel": "通常運航",
-        "targetDate": "2026-07-14",
+        "targetDate": "2026-07-15",
         "statusSource": "https://cosmoline.jp/ship-information",
         "statusMethod": "dated-status-line",
-        "statusEvidence": "7/14 通常運航予定 7/15 通常運航予定 7/16 通常運航予定 7/17 通常運航予定 7/18"
+        "statusEvidence": "7/15 通常運航予定 7/16 通常運航予定 7/17 通常運航予定 7/18 通常運航予定 7/19"
       },
       {
         "statusLabel": "通常運航",
-        "targetDate": "2026-07-14",
+        "targetDate": "2026-07-15",
         "statusSource": "https://cosmoline.jp/",
         "statusMethod": "dated-status-line",
-        "statusEvidence": "7/14 通常運航中 詳しくはこちら MENU 車両航送の ご予約はこちら TEL 099-222-827"
+        "statusEvidence": "7/15 通常運航中 詳しくはこちら MENU 車両航送の ご予約はこちら TEL 099-222-827"
       },
       {
         "statusLabel": "通常運航",
-        "targetDate": "2026-07-14",
+        "targetDate": "2026-07-15",
         "statusSource": "https://cosmoline.jp/ship-information",
         "statusMethod": "operation-context",
-        "statusEvidence": "運航情報 - 鹿児島と種子島をフェリー「プリンセスわかさ」の船旅で。 | コスモライン株式会社 鹿児島市錦江町23番4号 --> コスモライン・種子島へフェリープリンセスわかさで3時間30分の船旅 | 鹿児島-種子島間の船旅 --> 九州のりものinfo.com English 中国語 韓国語 ヘルプ --> 運航情報 7/14 通常運航中 詳しくはこちら "
+        "statusEvidence": "運航情報 - 鹿児島と種子島をフェリー「プリンセスわかさ」の船旅で。 | コスモライン株式会社 鹿児島市錦江町23番4号 --> コスモライン・種子島へフェリープリンセスわかさで3時間30分の船旅 | 鹿児島-種子島間の船旅 --> 九州のりものinfo.com English 中国語 韓国語 ヘルプ --> 運航情報 7/15 通常運航中 詳しくはこちら "
       },
       {
         "statusLabel": "通常運航",
-        "targetDate": "2026-07-14",
+        "targetDate": "2026-07-15",
         "statusSource": "https://cosmoline.jp/ship-information",
         "statusMethod": "operation-context",
-        "statusEvidence": "フェリープリンセスわかさで3時間30分の船旅 | 鹿児島-種子島間の船旅 --> 九州のりものinfo.com English 中国語 韓国語 ヘルプ --> 運航情報 7/14 通常運航中 詳しくはこちら MENU 車両航送の ご予約はこちら TEL 099-222-8271 受付 9:00〜17:00 日祝休み 運賃・ 時刻表 --> --> 乗船までの"
+        "statusEvidence": "フェリープリンセスわかさで3時間30分の船旅 | 鹿児島-種子島間の船旅 --> 九州のりものinfo.com English 中国語 韓国語 ヘルプ --> 運航情報 7/15 通常運航中 詳しくはこちら MENU 車両航送の ご予約はこちら TEL 099-222-8271 受付 9:00〜17:00 日祝休み 運賃・ 時刻表 --> --> 乗船までの"
       }
     ]
   },
@@ -60,9 +60,9 @@
     "type": "operation-status",
     "sourceName": "フェリー屋久島2",
     "statusLabel": "通常運航",
-    "targetDate": "2026-07-14",
+    "targetDate": "2026-07-15",
     "url": "http://www.norimono-info.com/frame_set.php?disp=area&pref=kago",
-    "checkedAt": "2026-07-14T16:57:31+09:00",
+    "checkedAt": "2026-07-15T08:10:26+09:00",
     "sourceId": "ferry-yakusima2-operation",
     "statusSource": "https://ferryyakusima2.com/",
     "statusMethod": "status-label",
@@ -71,14 +71,14 @@
     "statusChecks": [
       {
         "statusLabel": "通常運航",
-        "targetDate": "2026-07-14",
+        "targetDate": "2026-07-15",
         "statusSource": "https://ferryyakusima2.com/",
         "statusMethod": "status-label",
         "statusEvidence": "通常運航"
       },
       {
         "statusLabel": "通常運航",
-        "targetDate": "2026-07-14",
+        "targetDate": "2026-07-15",
         "statusSource": "https://ferryyakusima2.com/news",
         "statusMethod": "status-label",
         "statusEvidence": "通常運航"
@@ -92,21 +92,21 @@
       },
       {
         "statusLabel": "通常運航",
-        "targetDate": "2026-07-14",
+        "targetDate": "2026-07-15",
         "statusSource": "https://ferryyakusima2.com/",
         "statusMethod": "operation-block",
         "statusEvidence": "通常運航"
       },
       {
         "statusLabel": "通常運航",
-        "targetDate": "2026-07-14",
+        "targetDate": "2026-07-15",
         "statusSource": "https://ferryyakusima2.com/",
         "statusMethod": "operation-block",
         "statusEvidence": "運行状況 は 通常運航 です。"
       },
       {
         "statusLabel": "通常運航",
-        "targetDate": "2026-07-14",
+        "targetDate": "2026-07-15",
         "statusSource": "https://ferryyakusima2.com/news",
         "statusMethod": "operation-block",
         "statusEvidence": "通常運航"
