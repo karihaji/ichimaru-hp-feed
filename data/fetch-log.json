@@ -5,7 +5,7 @@
     "url": "https://p-town.dmm.com/shops/kagoshima/10981",
     "status": "failed",
     "message": "HTTP 403",
-    "checkedAt": "2026-07-19T14:58:25+09:00"
+    "checkedAt": "2026-07-19T17:11:27+09:00"
   },
   {
     "scope": "store-status",
@@ -13,7 +13,7 @@
     "url": "https://p-town.dmm.com/shops/kagoshima/10979",
     "status": "failed",
     "message": "HTTP 403",
-    "checkedAt": "2026-07-19T14:58:25+09:00"
+    "checkedAt": "2026-07-19T17:11:27+09:00"
   },
   {
     "scope": "store-status",
@@ -21,7 +21,7 @@
     "url": "https://p-town.dmm.com/shops/kagoshima/11049",
     "status": "failed",
     "message": "HTTP 403",
-    "checkedAt": "2026-07-19T14:58:25+09:00"
+    "checkedAt": "2026-07-19T17:11:27+09:00"
   },
   {
     "scope": "store-status",
@@ -29,7 +29,7 @@
     "url": "https://p-town.dmm.com/shops/kagoshima/11053",
     "status": "failed",
     "message": "HTTP 403",
-    "checkedAt": "2026-07-19T14:58:25+09:00"
+    "checkedAt": "2026-07-19T17:11:27+09:00"
   },
   {
     "scope": "store-status",
@@ -37,7 +37,7 @@
     "url": "https://p-town.dmm.com/shops/kagoshima/11167",
     "status": "failed",
     "message": "HTTP 403",
-    "checkedAt": "2026-07-19T14:58:25+09:00"
+    "checkedAt": "2026-07-19T17:11:27+09:00"
   },
   {
     "scope": "store-status",
@@ -45,7 +45,7 @@
     "url": "https://p-town.dmm.com/shops/kagoshima/11161",
     "status": "failed",
     "message": "HTTP 403",
-    "checkedAt": "2026-07-19T14:58:25+09:00"
+    "checkedAt": "2026-07-19T17:11:27+09:00"
   },
   {
     "scope": "store-status",
@@ -53,7 +53,7 @@
     "url": "https://www.p-world.co.jp/kagoshima/t-maxamami1.htm",
     "status": "ok",
     "message": "2026/07/09",
-    "checkedAt": "2026-07-19T14:58:25+09:00"
+    "checkedAt": "2026-07-19T17:11:27+09:00"
   },
   {
     "scope": "store-status",
@@ -61,7 +61,7 @@
     "url": "https://www.p-world.co.jp/kagoshima/t-max.htm",
     "status": "ok",
     "message": "2026/07/19",
-    "checkedAt": "2026-07-19T14:58:25+09:00"
+    "checkedAt": "2026-07-19T17:11:27+09:00"
   },
   {
     "scope": "store-status",
@@ -69,7 +69,7 @@
     "url": "https://www.p-world.co.jp/kagoshima/t-max1000.htm",
     "status": "ok",
     "message": "2026/07/19",
-    "checkedAt": "2026-07-19T14:58:25+09:00"
+    "checkedAt": "2026-07-19T17:11:27+09:00"
   },
   {
     "scope": "store-status",
@@ -77,7 +77,7 @@
     "url": "https://www.p-world.co.jp/kagoshima/tsurumaru-nakatane.htm",
     "status": "ok",
     "message": "2026/07/15",
-    "checkedAt": "2026-07-19T14:58:25+09:00"
+    "checkedAt": "2026-07-19T17:11:27+09:00"
   },
   {
     "scope": "store-status",
@@ -85,7 +85,7 @@
     "url": "https://www.p-world.co.jp/kagoshima/new-turumaru.htm",
     "status": "ok",
     "message": "2026/06/25",
-    "checkedAt": "2026-07-19T14:58:25+09:00"
+    "checkedAt": "2026-07-19T17:11:27+09:00"
   },
   {
     "scope": "store-status",
@@ -93,7 +93,7 @@
     "url": "https://www.p-world.co.jp/kagoshima/yakutsurumaru.htm",
     "status": "ok",
     "message": "2026/07/11",
-    "checkedAt": "2026-07-19T14:58:25+09:00"
+    "checkedAt": "2026-07-19T17:11:27+09:00"
   },
   {
     "scope": "store-status",
@@ -101,7 +101,7 @@
     "url": "https://www.p-world.co.jp/kagoshima/turumalu-kamome.htm",
     "status": "ok",
     "message": "2026/07/13",
-    "checkedAt": "2026-07-19T14:58:25+09:00"
+    "checkedAt": "2026-07-19T17:11:27+09:00"
   },
   {
     "scope": "operation-status",
@@ -109,7 +109,7 @@
     "url": "https://cosmoline.jp/ship-information",
     "status": "ok",
     "message": "運休 (operation-block, matched)",
-    "checkedAt": "2026-07-19T14:58:13+09:00"
+    "checkedAt": "2026-07-19T17:11:15+09:00"
   },
   {
     "scope": "operation-status",
@@ -117,7 +117,7 @@
     "url": "https://ferryyakusima2.com/",
     "status": "ok",
     "message": "通常運航 (status-label, matched)",
-    "checkedAt": "2026-07-19T14:58:13+09:00"
+    "checkedAt": "2026-07-19T17:11:15+09:00"
   },
   {
     "scope": "official-articles",
@@ -125,7 +125,7 @@
     "url": "https://cosmoline.jp/news",
     "status": "ok",
     "message": "10件取得",
-    "checkedAt": "2026-07-19T14:57:52+09:00"
+    "checkedAt": "2026-07-19T17:10:54+09:00"
   },
   {
     "scope": "official-articles",
@@ -133,7 +133,7 @@
     "url": "https://ferryyakusima2.com/",
     "status": "ok",
     "message": "5件取得",
-    "checkedAt": "2026-07-19T14:57:52+09:00"
+    "checkedAt": "2026-07-19T17:10:54+09:00"
   },
   {
     "scope": "official-articles",
@@ -141,7 +141,7 @@
     "url": "https://ferryyakusima2.com/news/",
     "status": "ok",
     "message": "10件取得",
-    "checkedAt": "2026-07-19T14:57:52+09:00"
+    "checkedAt": "2026-07-19T17:10:54+09:00"
   },
   {
     "scope": "official-articles",
@@ -149,7 +149,7 @@
     "url": "https://kyusho-port.jp/news",
     "status": "ok",
     "message": "3件取得",
-    "checkedAt": "2026-07-19T14:57:52+09:00"
+    "checkedAt": "2026-07-19T17:10:54+09:00"
   },
   {
     "scope": "official-articles",
@@ -157,7 +157,7 @@
     "url": "https://sunlight-zone.com/",
     "status": "ok",
     "message": "3件取得",
-    "checkedAt": "2026-07-19T14:57:52+09:00"
+    "checkedAt": "2026-07-19T17:10:54+09:00"
   },
   {
     "scope": "official-articles",
@@ -165,7 +165,7 @@
     "url": "https://sunlight-zone.com/category/league",
     "status": "ok",
     "message": "20件取得",
-    "checkedAt": "2026-07-19T14:57:52+09:00"
+    "checkedAt": "2026-07-19T17:10:54+09:00"
   },
   {
     "scope": "official-articles",
@@ -173,7 +173,7 @@
     "url": "https://www.t-maxbowl.com/",
     "status": "ok",
     "message": "3件取得",
-    "checkedAt": "2026-07-19T14:57:52+09:00"
+    "checkedAt": "2026-07-19T17:10:54+09:00"
   },
   {
     "scope": "official-articles",
@@ -181,7 +181,7 @@
     "url": "https://www.t-maxbowl.com/category/t-max-league",
     "status": "ok",
     "message": "20件取得",
-    "checkedAt": "2026-07-19T14:57:52+09:00"
+    "checkedAt": "2026-07-19T17:10:54+09:00"
   },
   {
     "scope": "official-articles",
@@ -189,7 +189,7 @@
     "url": "https://tsurutaxi.com/information/",
     "status": "ok",
     "message": "20件取得",
-    "checkedAt": "2026-07-19T14:57:52+09:00"
+    "checkedAt": "2026-07-19T17:10:54+09:00"
   },
   {
     "scope": "official-articles",
@@ -197,7 +197,7 @@
     "url": "https://tsuruhome.com/news/",
     "status": "ok",
     "message": "6件取得",
-    "checkedAt": "2026-07-19T14:57:52+09:00"
+    "checkedAt": "2026-07-19T17:10:54+09:00"
   },
   {
     "scope": "official-articles",
@@ -205,7 +205,7 @@
     "url": "https://ichimaru-grp.jp/news",
     "status": "ok",
     "message": "10件取得",
-    "checkedAt": "2026-07-19T14:57:52+09:00"
+    "checkedAt": "2026-07-19T17:10:54+09:00"
   },
   {
     "scope": "operation-status",
