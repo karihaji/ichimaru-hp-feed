@@ -5,7 +5,7 @@
     "statusLabel": "通常運航",
     "targetDate": "2026-07-22",
     "url": "https://cosmoline.jp/ship-information",
-    "checkedAt": "2026-07-22T13:10:02+09:00",
+    "checkedAt": "2026-07-22T14:54:21+09:00",
     "sourceId": "cosmoline-operation",
     "statusSource": "https://cosmoline.jp/ship-information",
     "statusMethod": "operation-block",
@@ -60,21 +60,56 @@
     "type": "operation-status",
     "sourceName": "フェリー屋久島2",
     "statusLabel": "通常運航",
-    "targetDate": "",
+    "targetDate": "2026-07-22",
     "url": "http://www.norimono-info.com/frame_set.php?disp=area&pref=kago",
-    "checkedAt": "2026-07-22T13:10:02+09:00",
+    "checkedAt": "2026-07-22T14:54:21+09:00",
     "sourceId": "ferry-yakusima2-operation",
-    "statusSource": "http://www.norimono-info.com/area_main.php?disp=area&pref=kago&lang=",
-    "statusMethod": "matched-block",
-    "statusEvidence": "鹿児島（本港南ふ頭）～屋久島（宮之浦港） ( 折田汽船（株） ) 通常運航 （最終決定は当日朝７時を予定） 最新情報はお電話にてご確認ください。 お問合せ099-226-0731",
-    "statusAgreement": "single",
+    "statusSource": "https://ferryyakusima2.com/",
+    "statusMethod": "status-label",
+    "statusEvidence": "通常運航",
+    "statusAgreement": "matched",
     "statusChecks": [
+      {
+        "statusLabel": "通常運航",
+        "targetDate": "2026-07-22",
+        "statusSource": "https://ferryyakusima2.com/",
+        "statusMethod": "status-label",
+        "statusEvidence": "通常運航"
+      },
+      {
+        "statusLabel": "通常運航",
+        "targetDate": "2026-07-22",
+        "statusSource": "https://ferryyakusima2.com/news",
+        "statusMethod": "status-label",
+        "statusEvidence": "通常運航"
+      },
       {
         "statusLabel": "通常運航",
         "targetDate": "",
         "statusSource": "http://www.norimono-info.com/area_main.php?disp=area&pref=kago&lang=",
         "statusMethod": "matched-block",
         "statusEvidence": "鹿児島（本港南ふ頭）～屋久島（宮之浦港） ( 折田汽船（株） ) 通常運航 （最終決定は当日朝７時を予定） 最新情報はお電話にてご確認ください。 お問合せ099-226-0731"
+      },
+      {
+        "statusLabel": "通常運航",
+        "targetDate": "2026-07-22",
+        "statusSource": "https://ferryyakusima2.com/",
+        "statusMethod": "operation-block",
+        "statusEvidence": "通常運航"
+      },
+      {
+        "statusLabel": "通常運航",
+        "targetDate": "2026-07-22",
+        "statusSource": "https://ferryyakusima2.com/",
+        "statusMethod": "operation-block",
+        "statusEvidence": "運行状況 は 通常運航 です。"
+      },
+      {
+        "statusLabel": "通常運航",
+        "targetDate": "2026-07-22",
+        "statusSource": "https://ferryyakusima2.com/news",
+        "statusMethod": "operation-block",
+        "statusEvidence": "通常運航"
       }
     ]
   }
