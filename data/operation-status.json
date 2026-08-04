@@ -5,11 +5,11 @@
     "statusLabel": "条件付運航",
     "targetDate": "2026-08-04",
     "url": "https://cosmoline.jp/ship-information",
-    "checkedAt": "2026-08-04T14:53:01+09:00",
+    "checkedAt": "2026-08-04T17:31:00+09:00",
     "sourceId": "cosmoline-operation",
     "statusSource": "https://cosmoline.jp/ship-information",
     "statusMethod": "operation-block",
-    "statusEvidence": "運航情報 当日の運航状況は朝7時に発表いたします。 1週間先の予定は下記になります。 運航予定ですので変更があった場合は随時更新していきますのでご乗船予定のお客様はご確認の上お越しください。 8/4 条件付運航 8/5 台風接近により条件付き運航または欠航の可能性有 8/6 台風接近により条件付き運航または欠航の可能性有 8/7 台風接近により条件付き運航ま",
+    "statusEvidence": "運航情報 当日の運航状況は朝7時に発表いたします。 1週間先の予定は下記になります。 運航予定ですので変更があった場合は随時更新していきますのでご乗船予定のお客様はご確認の上お越しください。 8/4 条件付運航 8/5 台風接近による海上荒天の為、欠航 8/6 台風接近による海上荒天の為、欠航 8/7 台風接近による海上荒天の為、欠航 8/8 台風接近による",
     "statusAgreement": "matched",
     "statusChecks": [
       {
@@ -17,7 +17,7 @@
         "targetDate": "2026-08-04",
         "statusSource": "https://cosmoline.jp/ship-information",
         "statusMethod": "operation-block",
-        "statusEvidence": "運航情報 当日の運航状況は朝7時に発表いたします。 1週間先の予定は下記になります。 運航予定ですので変更があった場合は随時更新していきますのでご乗船予定のお客様はご確認の上お越しください。 8/4 条件付運航 8/5 台風接近により条件付き運航または欠航の可能性有 8/6 台風接近により条件付き運航または欠航の可能性有 8/7 台風接近により条件付き運航ま"
+        "statusEvidence": "運航情報 当日の運航状況は朝7時に発表いたします。 1週間先の予定は下記になります。 運航予定ですので変更があった場合は随時更新していきますのでご乗船予定のお客様はご確認の上お越しください。 8/4 条件付運航 8/5 台風接近による海上荒天の為、欠航 8/6 台風接近による海上荒天の為、欠航 8/7 台風接近による海上荒天の為、欠航 8/8 台風接近による"
       },
       {
         "statusLabel": "条件付運航",
@@ -31,7 +31,7 @@
         "targetDate": "2026-08-04",
         "statusSource": "https://cosmoline.jp/ship-information",
         "statusMethod": "dated-status-line",
-        "statusEvidence": "8/4 条件付運航 8/5 台風接近により条件付き運航または欠航の可能性有 8/6 台風接近により条件付"
+        "statusEvidence": "8/4 条件付運航 8/5 台風接近による海上荒天の為、欠航 8/6 台風接近による海上荒天の為、欠航"
       },
       {
         "statusLabel": "条件付運航",
@@ -62,7 +62,7 @@
     "statusLabel": "通常運航",
     "targetDate": "2026-08-04",
     "url": "http://www.norimono-info.com/frame_set.php?disp=area&pref=kago",
-    "checkedAt": "2026-08-04T14:53:01+09:00",
+    "checkedAt": "2026-08-04T17:31:00+09:00",
     "sourceId": "ferry-yakusima2-operation",
     "statusSource": "http://www.norimono-info.com/area_main.php?disp=area&pref=kago&lang=",
     "statusMethod": "matched-block",
