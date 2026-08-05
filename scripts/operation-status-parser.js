@@ -23,7 +23,7 @@ const STATUS_PATTERNS = [
   },
   {
     label: "通常運航",
-    pattern: /(?:通常|平常)\s*(?:通り)?\s*(?:運航|出航|出港)(?:予定)?|運航予定|出航予定/
+    pattern: /(?:通常|平常)\s*(?:通り)?\s*(?:運航|出航|出港)(?:予定)?|(?:^|[\s、。．])(?:運航|出航)予定(?:です|[。．\s]|$)/
   },
   {
     label: "運航未定",
@@ -143,7 +143,7 @@ function parseStatusText(text, checkedAt) {
 
 function parseDatedStatuses(text, checkedAt) {
   const results = [];
-  const pattern = /((?:20\d{2}[./-]\d{1,2}[./-]\d{1,2}|\d{1,2}月\s*\d{1,2}日|\d{1,2}\s*\/\s*\d{1,2})\s*[^。．\n\r]{0,36})/g;
+  const pattern = /((?:20\d{2}[./-]\d{1,2}[./-]\d{1,2}|\d{1,2}月\s*\d{1,2}日|\d{1,2}\s*\/\s*\d{1,2})\s*[^。．\n\r]{0,140})/g;
 
   for (const match of text.matchAll(pattern)) {
     const fragment = match[1];
@@ -193,6 +193,20 @@ function findCheckedDateInRange(text, checkedAt) {
   const current = checkedDate(checkedAt);
   const currentDate = new Date(`${current}T00:00:00+09:00`);
   if (Number.isNaN(currentDate.getTime())) return "";
+
+  const monthDayList = text.match(/(\d{1,2})月\s*((?:\d{1,2}\s*日?\s*(?:[・･、,]|と|及び|および)?\s*){2,})/);
+  if (monthDayList) {
+    const month = Number(monthDayList[1]);
+    const days = Array.from(monthDayList[2].matchAll(/(\d{1,2})\s*日?/g), (match) => Number(match[1]));
+    if (days.some((day) => monthDayToIsoDate(month, day, checkedAt) === current)) return current;
+  }
+
+  const slashDayList = text.match(/(\d{1,2})\s*\/\s*((?:\d{1,2}\s*(?:[・･、,]|と|及び|および)?\s*){2,})/);
+  if (slashDayList) {
+    const month = Number(slashDayList[1]);
+    const days = Array.from(slashDayList[2].matchAll(/(\d{1,2})/g), (match) => Number(match[1]));
+    if (days.some((day) => monthDayToIsoDate(month, day, checkedAt) === current)) return current;
+  }
 
   const monthDayRange = text.match(/(\d{1,2})月\s*(\d{1,2})日\s*(?:[・･、,~〜～\-－]|から|と)\s*(\d{1,2})日/);
   if (monthDayRange) {

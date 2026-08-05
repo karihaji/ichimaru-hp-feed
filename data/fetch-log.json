@@ -1,5 +1,21 @@
 [
   {
+    "scope": "operation-status",
+    "source": "コスモライン",
+    "url": "https://cosmoline.jp/ship-information",
+    "status": "ok",
+    "message": "欠航 (operation-block, matched)",
+    "checkedAt": "2026-08-05T12:56:27+09:00"
+  },
+  {
+    "scope": "operation-status",
+    "source": "フェリー屋久島2",
+    "url": "http://www.norimono-info.com/area_main.php?disp=area&pref=kago&lang=",
+    "status": "ok",
+    "message": "欠航 (matched-block, matched)",
+    "checkedAt": "2026-08-05T12:56:27+09:00"
+  },
+  {
     "scope": "store-status",
     "source": "DMMぱちタウン T-MAX PRIDE",
     "url": "https://p-town.dmm.com/shops/kagoshima/10981",
@@ -104,22 +120,6 @@
     "checkedAt": "2026-08-05T12:51:17+09:00"
   },
   {
-    "scope": "operation-status",
-    "source": "コスモライン",
-    "url": "https://cosmoline.jp/ship-information",
-    "status": "ok",
-    "message": "欠航 (operation-block, matched)",
-    "checkedAt": "2026-08-05T12:51:06+09:00"
-  },
-  {
-    "scope": "operation-status",
-    "source": "フェリー屋久島2",
-    "url": "http://www.norimono-info.com/area_main.php?disp=area&pref=kago&lang=",
-    "status": "ok",
-    "message": "通常運航 (matched-block, conflict)",
-    "checkedAt": "2026-08-05T12:51:06+09:00"
-  },
-  {
     "scope": "official-articles",
     "source": "コスモライン",
     "url": "https://cosmoline.jp/news",
@@ -206,22 +206,6 @@
     "status": "ok",
     "message": "10件取得",
     "checkedAt": "2026-08-05T12:50:46+09:00"
-  },
-  {
-    "scope": "operation-status",
-    "source": "フェリー屋久島2",
-    "url": "https://ferryyakusima2.com/",
-    "status": "ok",
-    "message": "通常運航 (status-label, matched)",
-    "checkedAt": "2026-08-03T15:27:57+09:00"
-  },
-  {
-    "scope": "operation-status",
-    "source": "コスモライン",
-    "url": "https://cosmoline.jp/",
-    "status": "ok",
-    "message": "条件付運航",
-    "checkedAt": "2026-07-10T08:35:39+09:00"
   },
   {
     "scope": "store-status",
