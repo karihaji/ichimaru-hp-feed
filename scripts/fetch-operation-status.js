@@ -34,8 +34,9 @@ for (const source of config.officialSources || []) {
           sourceUrl: document.finalUrl || document.url,
           matchTerms: operation.matchTerms || []
         });
-        extractedCount += extracted.length;
-        candidates.push(...extracted);
+        const filtered = filterOperationCandidates(extracted, operation);
+        extractedCount += filtered.length;
+        candidates.push(...filtered);
       }
 
       attempts.push({
@@ -70,6 +71,13 @@ console.log(`operation-status: ${results.length}件保存`);
 function operationStatusUrls(operation) {
   const urls = operation.statusUrls || [operation.sourceUrl, operation.detailUrl];
   return Array.from(new Set(urls.filter(Boolean)));
+}
+
+function filterOperationCandidates(candidates, operation) {
+  if (!operation.statusMethods?.length) return candidates;
+
+  const allowed = new Set(operation.statusMethods);
+  return candidates.filter((candidate) => allowed.has(candidate.statusMethod));
 }
 
 async function fetchOperationDocuments(url, operation, depth = 0, seen = new Set()) {

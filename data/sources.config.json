@@ -61,15 +61,11 @@
         "sourceUrl": "https://ferryyakusima2.com/",
         "detailUrl": "http://www.norimono-info.com/frame_set.php?disp=area&pref=kago",
         "statusUrls": [
-          "https://ferryyakusima2.com/",
-          "https://ferryyakusima2.com/news/",
-          "http://www.norimono-info.com/frame_set.php?disp=area&pref=kago",
-          "http://www.norimono-info.com/area_main.php?disp=area&pref=kago&lang="
+          "https://ferryyakusima2.com/"
         ],
-        "matchTerms": [
-          "フェリー屋久島",
-          "折田汽船",
-          "鹿児島（本港南ふ頭）～屋久島"
+        "statusMethods": [
+          "status-label",
+          "operation-block"
         ],
         "label": "運航状況"
       }

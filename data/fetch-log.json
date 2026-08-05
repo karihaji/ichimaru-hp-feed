@@ -5,15 +5,15 @@
     "url": "https://cosmoline.jp/ship-information",
     "status": "ok",
     "message": "欠航 (operation-block, matched)",
-    "checkedAt": "2026-08-05T12:56:27+09:00"
+    "checkedAt": "2026-08-05T13:07:42+09:00"
   },
   {
     "scope": "operation-status",
     "source": "フェリー屋久島2",
-    "url": "http://www.norimono-info.com/area_main.php?disp=area&pref=kago&lang=",
+    "url": "https://ferryyakusima2.com/",
     "status": "ok",
-    "message": "欠航 (matched-block, matched)",
-    "checkedAt": "2026-08-05T12:56:27+09:00"
+    "message": "欠航 (status-label, single)",
+    "checkedAt": "2026-08-05T13:07:42+09:00"
   },
   {
     "scope": "store-status",

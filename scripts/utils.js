@@ -291,7 +291,9 @@ export async function upsertFetchLogs(entries) {
   const deduped = [];
 
   for (const entry of next) {
-    const key = [entry.scope || "", entry.source || "", entry.url || ""].join("|");
+    const keyParts = [entry.scope || "", entry.source || ""];
+    if (entry.scope !== "operation-status") keyParts.push(entry.url || "");
+    const key = keyParts.join("|");
     if (seen.has(key)) continue;
     seen.add(key);
     deduped.push(entry);

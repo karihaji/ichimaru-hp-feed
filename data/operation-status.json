@@ -5,7 +5,7 @@
     "statusLabel": "欠航",
     "targetDate": "2026-08-05",
     "url": "https://cosmoline.jp/ship-information",
-    "checkedAt": "2026-08-05T12:56:27+09:00",
+    "checkedAt": "2026-08-05T13:07:42+09:00",
     "sourceId": "cosmoline-operation",
     "statusSource": "https://cosmoline.jp/ship-information",
     "statusMethod": "operation-block",
@@ -62,31 +62,17 @@
     "statusLabel": "欠航",
     "targetDate": "2026-08-05",
     "url": "http://www.norimono-info.com/frame_set.php?disp=area&pref=kago",
-    "checkedAt": "2026-08-05T12:56:27+09:00",
+    "checkedAt": "2026-08-05T13:07:42+09:00",
     "sourceId": "ferry-yakusima2-operation",
-    "statusSource": "http://www.norimono-info.com/area_main.php?disp=area&pref=kago&lang=",
-    "statusMethod": "matched-block",
-    "statusEvidence": "鹿児島（本港南ふ頭）～屋久島（宮之浦港） ( 折田汽船（株） ) 8月4日・5日・6日・7日運航予定の屋久島行きフェリー屋久島２は海上シケのため鹿児島⇔屋久島間 欠航いたします。",
-    "statusAgreement": "matched",
+    "statusSource": "https://ferryyakusima2.com/",
+    "statusMethod": "status-label",
+    "statusEvidence": "欠航",
+    "statusAgreement": "single",
     "statusChecks": [
       {
         "statusLabel": "欠航",
         "targetDate": "2026-08-05",
-        "statusSource": "http://www.norimono-info.com/area_main.php?disp=area&pref=kago&lang=",
-        "statusMethod": "matched-block",
-        "statusEvidence": "鹿児島（本港南ふ頭）～屋久島（宮之浦港） ( 折田汽船（株） ) 8月4日・5日・6日・7日運航予定の屋久島行きフェリー屋久島２は海上シケのため鹿児島⇔屋久島間 欠航いたします。"
-      },
-      {
-        "statusLabel": "欠航",
-        "targetDate": "2026-08-05",
         "statusSource": "https://ferryyakusima2.com/",
-        "statusMethod": "status-label",
-        "statusEvidence": "欠航"
-      },
-      {
-        "statusLabel": "欠航",
-        "targetDate": "2026-08-05",
-        "statusSource": "https://ferryyakusima2.com/news",
         "statusMethod": "status-label",
         "statusEvidence": "欠航"
       },
@@ -103,13 +89,6 @@
         "statusSource": "https://ferryyakusima2.com/",
         "statusMethod": "operation-block",
         "statusEvidence": "運行状況 は 欠航 です。"
-      },
-      {
-        "statusLabel": "欠航",
-        "targetDate": "2026-08-05",
-        "statusSource": "https://ferryyakusima2.com/news",
-        "statusMethod": "operation-block",
-        "statusEvidence": "欠航"
       }
     ]
   }
