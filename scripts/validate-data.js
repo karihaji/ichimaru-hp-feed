@@ -12,6 +12,7 @@ const requiredFiles = [
   "data/sources.config.json",
   "data/official-articles.json",
   "data/operation-status.json",
+  "data/operation-status-health.json",
   "data/store-status.json",
   "data/fetch-log.json"
 ];
@@ -23,6 +24,7 @@ for (const file of requiredFiles) {
 const config = await readJson("sources.config.json");
 const articles = await readJson("official-articles.json");
 const operations = await readJson("operation-status.json");
+const operationHealth = await readJson("operation-status-health.json");
 const stores = await readJson("store-status.json");
 const logs = await readJson("fetch-log.json");
 
@@ -30,6 +32,7 @@ assert(Array.isArray(config.officialSources), "officialSources must be an array"
 assert(Array.isArray(config.storeSources), "storeSources must be an array");
 assert(Array.isArray(articles), "official-articles.json must be an array");
 assert(Array.isArray(operations), "operation-status.json must be an array");
+assert(Array.isArray(operationHealth), "operation-status-health.json must be an array");
 assert(Array.isArray(stores), "store-status.json must be an array");
 assert(Array.isArray(logs), "fetch-log.json must be an array");
 

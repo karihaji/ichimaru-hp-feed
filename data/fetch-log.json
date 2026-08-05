@@ -4,16 +4,16 @@
     "source": "コスモライン",
     "url": "https://cosmoline.jp/ship-information",
     "status": "ok",
-    "message": "欠航 (operation-block, matched)",
-    "checkedAt": "2026-08-05T13:07:42+09:00"
+    "message": "欠航 (operation-block, official-only, primary-ok)",
+    "checkedAt": "2026-08-05T13:42:02+09:00"
   },
   {
     "scope": "operation-status",
     "source": "フェリー屋久島2",
     "url": "https://ferryyakusima2.com/",
     "status": "ok",
-    "message": "欠航 (status-label, single)",
-    "checkedAt": "2026-08-05T13:07:42+09:00"
+    "message": "欠航 (status-label, matched, primary-ok)",
+    "checkedAt": "2026-08-05T13:42:02+09:00"
   },
   {
     "scope": "store-status",

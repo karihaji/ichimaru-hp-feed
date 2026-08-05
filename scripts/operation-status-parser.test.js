@@ -99,6 +99,41 @@ test("does not treat scheduled Ferry Yakushima wording as normal operation", () 
   }
 });
 
+test("does not treat bare scheduled wording as normal operation", () => {
+  const html = `
+    <table><tr>
+      <td>鹿児島（本港南ふ頭）～屋久島（宮之浦港）<br>（折田汽船（株））</td>
+      <td>8月4日・5日・6日・7日運航予定の屋久島行きフェリー屋久島２</td>
+    </tr></table>
+  `;
+
+  const candidates = extractOperationStatusCandidates(html, {
+    checkedAt: "2026-08-05T09:10:18+09:00",
+    sourceUrl: "http://www.norimono-info.com/area_main.php?disp=area&pref=kago&lang=",
+    matchTerms: ["フェリー屋久島", "折田汽船", "鹿児島（本港南ふ頭）～屋久島"]
+  });
+
+  assert.equal(candidates.length, 0);
+});
+
+test("accepts short normal operation wording from a fallback row", () => {
+  const html = `
+    <table><tr>
+      <td>鹿児島（本港南ふ頭）～屋久島（宮之浦港）<br>（折田汽船（株））</td>
+      <td>通常運行</td>
+    </tr></table>
+  `;
+
+  const selected = selectOperationStatus(extractOperationStatusCandidates(html, {
+    checkedAt,
+    sourceUrl: "http://www.norimono-info.com/area_main.php?disp=area&pref=kago&lang=",
+    matchTerms: ["フェリー屋久島", "折田汽船", "鹿児島（本港南ふ頭）～屋久島"]
+  }));
+
+  assert.equal(selected.statusLabel, "通常運航");
+  assert.equal(selected.statusMethod, "matched-block");
+});
+
 test("does not treat unrelated FAQ text as an operation status", () => {
   const html = `
     <h2>条件付出港とは</h2>

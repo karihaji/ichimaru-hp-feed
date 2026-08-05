@@ -5,17 +5,21 @@
     "statusLabel": "欠航",
     "targetDate": "2026-08-05",
     "url": "https://cosmoline.jp/ship-information",
-    "checkedAt": "2026-08-05T13:07:42+09:00",
+    "checkedAt": "2026-08-05T13:42:02+09:00",
     "sourceId": "cosmoline-operation",
     "statusSource": "https://cosmoline.jp/ship-information",
+    "statusSourceRole": "official",
     "statusMethod": "operation-block",
     "statusEvidence": "運航情報 当日の運航状況は朝7時に発表いたします。 1週間先の予定は下記になります。 運航予定ですので変更があった場合は随時更新していきますのでご乗船予定のお客様はご確認の上お越しください。 8/5 台風接近による海上荒天の為、欠航 8/6 台風接近による海上荒天の為、欠航 8/7 台風接近による海上荒天の為、欠航 8/8 台風接近による条件付き運航または欠",
-    "statusAgreement": "matched",
+    "statusAgreement": "official-only",
+    "activeSource": "official",
+    "statusReason": "primary-ok",
     "statusChecks": [
       {
         "statusLabel": "欠航",
         "targetDate": "2026-08-05",
         "statusSource": "https://cosmoline.jp/ship-information",
+        "statusSourceRole": "official",
         "statusMethod": "operation-block",
         "statusEvidence": "運航情報 当日の運航状況は朝7時に発表いたします。 1週間先の予定は下記になります。 運航予定ですので変更があった場合は随時更新していきますのでご乗船予定のお客様はご確認の上お越しください。 8/5 台風接近による海上荒天の為、欠航 8/6 台風接近による海上荒天の為、欠航 8/7 台風接近による海上荒天の為、欠航 8/8 台風接近による条件付き運航または欠"
       },
@@ -23,6 +27,7 @@
         "statusLabel": "欠航",
         "targetDate": "2026-08-05",
         "statusSource": "https://cosmoline.jp/ship-information",
+        "statusSourceRole": "official",
         "statusMethod": "dated-status-line",
         "statusEvidence": "8/5 欠航中 詳しくはこちら MENU 車両航送の ご予約はこちら TEL 099-222-8271"
       },
@@ -30,6 +35,7 @@
         "statusLabel": "欠航",
         "targetDate": "2026-08-05",
         "statusSource": "https://cosmoline.jp/ship-information",
+        "statusSourceRole": "official",
         "statusMethod": "dated-status-line",
         "statusEvidence": "8/5 台風接近による海上荒天の為、欠航 8/6 台風接近による海上荒天の為、欠航 8/7 台風接近によ"
       },
@@ -37,6 +43,7 @@
         "statusLabel": "欠航",
         "targetDate": "2026-08-05",
         "statusSource": "https://cosmoline.jp/",
+        "statusSourceRole": "official",
         "statusMethod": "dated-status-line",
         "statusEvidence": "8/5 欠航中 詳しくはこちら MENU 車両航送の ご予約はこちら TEL 099-222-8271"
       },
@@ -44,6 +51,7 @@
         "statusLabel": "欠航",
         "targetDate": "2026-08-05",
         "statusSource": "https://cosmoline.jp/ship-information",
+        "statusSourceRole": "official",
         "statusMethod": "operation-context",
         "statusEvidence": "運航情報 - 鹿児島と種子島をフェリー「プリンセスわかさ」の船旅で。 | コスモライン株式会社 鹿児島市錦江町23番4号 --> コスモライン・種子島へフェリープリンセスわかさで3時間30分の船旅 | 鹿児島-種子島間の船旅 --> 九州のりものinfo.com English 中国語 韓国語 ヘルプ --> 運航情報 8/5 欠航中 詳しくはこちら MEN"
       },
@@ -51,6 +59,7 @@
         "statusLabel": "欠航",
         "targetDate": "2026-08-05",
         "statusSource": "https://cosmoline.jp/ship-information",
+        "statusSourceRole": "official",
         "statusMethod": "operation-context",
         "statusEvidence": "フェリープリンセスわかさで3時間30分の船旅 | 鹿児島-種子島間の船旅 --> 九州のりものinfo.com English 中国語 韓国語 ヘルプ --> 運航情報 8/5 欠航中 詳しくはこちら MENU 車両航送の ご予約はこちら TEL 099-222-8271 受付 9:00〜17:00 日祝休み 運賃・ 時刻表 --> --> 乗船までの流れ "
       }
@@ -62,17 +71,21 @@
     "statusLabel": "欠航",
     "targetDate": "2026-08-05",
     "url": "http://www.norimono-info.com/frame_set.php?disp=area&pref=kago",
-    "checkedAt": "2026-08-05T13:07:42+09:00",
+    "checkedAt": "2026-08-05T13:42:02+09:00",
     "sourceId": "ferry-yakusima2-operation",
     "statusSource": "https://ferryyakusima2.com/",
+    "statusSourceRole": "official",
     "statusMethod": "status-label",
     "statusEvidence": "欠航",
-    "statusAgreement": "single",
+    "statusAgreement": "matched",
+    "activeSource": "official",
+    "statusReason": "primary-ok",
     "statusChecks": [
       {
         "statusLabel": "欠航",
         "targetDate": "2026-08-05",
         "statusSource": "https://ferryyakusima2.com/",
+        "statusSourceRole": "official",
         "statusMethod": "status-label",
         "statusEvidence": "欠航"
       },
@@ -80,6 +93,7 @@
         "statusLabel": "欠航",
         "targetDate": "2026-08-05",
         "statusSource": "https://ferryyakusima2.com/",
+        "statusSourceRole": "official",
         "statusMethod": "operation-block",
         "statusEvidence": "欠航"
       },
@@ -87,8 +101,17 @@
         "statusLabel": "欠航",
         "targetDate": "2026-08-05",
         "statusSource": "https://ferryyakusima2.com/",
+        "statusSourceRole": "official",
         "statusMethod": "operation-block",
         "statusEvidence": "運行状況 は 欠航 です。"
+      },
+      {
+        "statusLabel": "欠航",
+        "targetDate": "2026-08-05",
+        "statusSource": "http://www.norimono-info.com/area_main.php?disp=area&pref=kago&lang=",
+        "statusSourceRole": "fallback",
+        "statusMethod": "matched-block",
+        "statusEvidence": "欠航"
       }
     ]
   }
