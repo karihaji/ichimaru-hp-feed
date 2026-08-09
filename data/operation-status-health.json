@@ -3,28 +3,28 @@
     "sourceId": "cosmoline-operation",
     "sourceName": "コスモライン",
     "primaryFailureCount": 0,
-    "lastPrimarySuccessAt": "2026-08-09T15:50:24+09:00",
-    "lastPrimaryStatusLabel": "条件付運航",
-    "lastPrimaryTargetDate": "2026-08-09",
+    "lastPrimarySuccessAt": "2026-08-10T07:49:02+09:00",
+    "lastPrimaryStatusLabel": "通常運航",
+    "lastPrimaryTargetDate": "2026-08-10",
     "lastPrimaryStatusSource": "https://cosmoline.jp/ship-information",
     "fallbackStatusLabel": "",
     "fallbackCheckedAt": "",
     "activeSource": "official",
     "reason": "primary-ok",
-    "updatedAt": "2026-08-09T15:50:24+09:00"
+    "updatedAt": "2026-08-10T07:49:02+09:00"
   },
   {
     "sourceId": "ferry-yakusima2-operation",
     "sourceName": "フェリー屋久島2",
-    "primaryFailureCount": 0,
+    "primaryFailureCount": 1,
     "lastPrimarySuccessAt": "2026-08-09T15:50:24+09:00",
     "lastPrimaryStatusLabel": "欠航",
     "lastPrimaryTargetDate": "2026-08-09",
     "lastPrimaryStatusSource": "https://ferryyakusima2.com/",
     "fallbackStatusLabel": "欠航",
-    "fallbackCheckedAt": "2026-08-09T15:50:24+09:00",
+    "fallbackCheckedAt": "2026-08-10T07:49:02+09:00",
     "activeSource": "official",
-    "reason": "primary-ok",
-    "updatedAt": "2026-08-09T15:50:24+09:00"
+    "reason": "primary-failed-retaining-last",
+    "updatedAt": "2026-08-10T07:49:02+09:00"
   }
 ]
