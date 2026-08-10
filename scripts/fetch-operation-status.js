@@ -10,6 +10,10 @@ import {
   extractOperationStatusCandidates,
   selectOperationStatus
 } from "./operation-status-parser.js";
+import {
+  buildPublisherStatusRecord,
+  safeAttemptDiagnostics
+} from "./operation-status-publisher.js";
 
 const config = await readJson("sources.config.json");
 const previousHealth = toHealthMap(await readJson("operation-status-health.json", []));
@@ -17,6 +21,7 @@ const checkedAt = nowJst();
 const logs = [];
 const results = [];
 const healthEntries = [];
+const publisherResults = [];
 
 for (const source of config.officialSources || []) {
   const operation = source.operationStatus;
@@ -48,11 +53,22 @@ for (const source of config.officialSources || []) {
   ];
 
   results.push(toOperationResult(source, operation, sourceId, decision, checks));
-  healthEntries.push(toHealthEntry(source, sourceId, decision, fallbackSelected));
+  publisherResults.push(buildPublisherStatusRecord({
+    source,
+    sourceId,
+    checkedAt,
+    primarySelected,
+    fallbackSelected,
+    primaryAttempts: primaryFetch.attempts,
+    fallbackAttempts: fallbackFetch.attempts,
+    decision
+  }));
+  healthEntries.push(toHealthEntry(source, sourceId, decision, fallbackSelected, primaryFetch.attempts, fallbackFetch.attempts));
   logs.push(toOperationLog(source, operation, decision, [...primaryFetch.attempts, ...fallbackFetch.attempts]));
 }
 
 await writeJson("operation-status.json", results);
+await writeJson("operation-status-publisher.json", publisherResults);
 await writeJson("operation-status-health.json", healthEntries);
 await upsertFetchLogs(logs);
 
@@ -80,6 +96,7 @@ async function fetchStatusGroup(group) {
 
   for (const url of group.statusUrls) {
     for (let attempt = 1; attempt <= group.retryCount; attempt += 1) {
+      const startedAt = nowJst();
       try {
         const documents = await fetchOperationDocuments(url, group);
         const extracted = [];
@@ -102,8 +119,14 @@ async function fetchStatusGroup(group) {
           role: group.role,
           url,
           attempt,
+          startedAt,
           status: filtered.length ? "ok" : "warning",
-          message: `${filtered.length}候補/${documents.length}ページ`
+          message: `${filtered.length}候補/${documents.length}ページ`,
+          httpReachable: documents.length > 0,
+          httpStatus: firstHttpStatus(documents),
+          parserStatus: filtered.length ? "success" : "no-candidate",
+          failureType: filtered.length ? "" : "parser-no-candidate",
+          errorReason: filtered.length ? "" : `${documents.length}ページから対象候補を抽出できませんでした`
         });
 
         if (filtered.length || attempt === group.retryCount) break;
@@ -113,8 +136,14 @@ async function fetchStatusGroup(group) {
           role: group.role,
           url,
           attempt,
+          startedAt,
           status: "failed",
-          message: error.message
+          message: error.message,
+          httpReachable: Boolean(httpStatusFromError(error.message)),
+          httpStatus: httpStatusFromError(error.message),
+          parserStatus: "not-run",
+          failureType: httpStatusFromError(error.message) ? "http-error" : "fetch-error",
+          errorReason: safeErrorReason(error.message)
         });
 
         if (attempt < group.retryCount) await sleep(group.retryDelayMs);
@@ -152,7 +181,8 @@ async function fetchOperationDocuments(url, group, depth = 0, seen = new Set()) 
   const document = {
     url,
     finalUrl: response.finalUrl || url,
-    text: response.text
+    text: response.text,
+    httpStatus: response.status
   };
   const documents = [document];
 
@@ -285,7 +315,7 @@ function toOperationResult(source, operation, sourceId, decision, checks) {
   };
 }
 
-function toHealthEntry(source, sourceId, decision, fallbackSelected) {
+function toHealthEntry(source, sourceId, decision, fallbackSelected, primaryAttempts, fallbackAttempts) {
   return {
     sourceId,
     sourceName: source.siteName,
@@ -298,7 +328,12 @@ function toHealthEntry(source, sourceId, decision, fallbackSelected) {
     fallbackCheckedAt: fallbackSelected ? checkedAt : decision.fallbackCheckedAt,
     activeSource: decision.activeSource,
     reason: decision.reason,
-    updatedAt: checkedAt
+    updatedAt: checkedAt,
+    diagnostics: {
+      primaryAttempts: safeAttemptDiagnostics(primaryAttempts),
+      fallbackAttempts: safeAttemptDiagnostics(fallbackAttempts),
+      fallbackResult: fallbackSelected ? "candidate" : "none"
+    }
   };
 }
 
@@ -383,4 +418,17 @@ function toHealthMap(entries) {
 
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+function firstHttpStatus(documents) {
+  return documents.find((document) => document.httpStatus)?.httpStatus ?? null;
+}
+
+function httpStatusFromError(message = "") {
+  const match = String(message).match(/^HTTP\s+(\d{3})/);
+  return match ? Number(match[1]) : null;
+}
+
+function safeErrorReason(message = "") {
+  return String(message || "unknown error").slice(0, 160);
 }
