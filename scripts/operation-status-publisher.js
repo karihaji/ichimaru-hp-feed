@@ -35,17 +35,19 @@ export function buildPublisherStatusRecord({
   fallbackAttempts = [],
   decision
 }) {
-  const today = checkedDate(checkedAt);
+  const generatedAtValue = generatedAt || checkedAt;
+  const today = checkedDate(generatedAtValue);
   const official = validPublishCandidate(primarySelected, today);
   const fallback = validPublishCandidate(fallbackSelected, today);
   const primaryExhausted = exhaustedPrimaryAttempts(primaryAttempts);
 
   if (official.valid) {
+    const selectedAttempt = attemptForCandidate(primarySelected, primaryAttempts);
     return publisherRecord({
       source,
       sourceId,
-      checkedAt,
-      generatedAt,
+      checkedAt: attemptCheckedAt(selectedAttempt, generatedAtValue),
+      generatedAt: generatedAtValue,
       candidate: primarySelected,
       normalizedStatus: official.normalizedStatus,
       publishable: true,
@@ -59,11 +61,12 @@ export function buildPublisherStatusRecord({
   }
 
   if (primaryExhausted && fallback.valid) {
+    const selectedAttempt = attemptForCandidate(fallbackSelected, fallbackAttempts);
     return publisherRecord({
       source,
       sourceId,
-      checkedAt,
-      generatedAt,
+      checkedAt: attemptCheckedAt(selectedAttempt, generatedAtValue),
+      generatedAt: generatedAtValue,
       candidate: fallbackSelected,
       normalizedStatus: fallback.normalizedStatus,
       publishable: true,
@@ -80,8 +83,8 @@ export function buildPublisherStatusRecord({
   return publisherRecord({
     source,
     sourceId,
-    checkedAt,
-    generatedAt,
+    checkedAt: latestAttemptCheckedAt([...primaryAttempts, ...fallbackAttempts], generatedAtValue),
+    generatedAt: generatedAtValue,
     candidate,
     normalizedStatus: "INVALID",
     publishable: false,
@@ -119,11 +122,13 @@ export function safeAttemptDiagnostics(attempts = []) {
     url: attempt.url || "",
     attempt: Number(attempt.attempt || 0),
     startedAt: attempt.startedAt || "",
+    completedAt: attempt.completedAt || "",
     httpReachable: Boolean(attempt.httpReachable),
     httpStatus: attempt.httpStatus ?? null,
     parserStatus: attempt.parserStatus || "unknown",
     failureType: attempt.failureType || "",
-    errorReason: attempt.errorReason || attempt.message || ""
+    errorReason: attempt.errorReason || attempt.message || "",
+    candidateSources: Array.isArray(attempt.candidateSources) ? attempt.candidateSources : []
   }));
 }
 
@@ -205,4 +210,25 @@ function publisherRecord({
 function checkedDate(checkedAt) {
   if (/^\d{4}-\d{2}-\d{2}/.test(checkedAt || "")) return checkedAt.slice(0, 10);
   return "";
+}
+
+function attemptForCandidate(candidate, attempts = []) {
+  if (!candidate) return null;
+  return attempts.find((attempt) => {
+    if (attempt.parserStatus !== "success") return false;
+    const sources = Array.isArray(attempt.candidateSources) ? attempt.candidateSources : [];
+    return sources.includes(candidate.statusSource) || attempt.url === candidate.statusSource;
+  }) || attempts.find((attempt) => attempt.parserStatus === "success") || null;
+}
+
+function attemptCheckedAt(attempt, fallback) {
+  return attempt?.completedAt || attempt?.startedAt || fallback;
+}
+
+function latestAttemptCheckedAt(attempts = [], fallback) {
+  const completed = attempts
+    .map((attempt) => attempt.completedAt || attempt.startedAt || "")
+    .filter(Boolean)
+    .sort();
+  return completed.at(-1) || fallback;
 }

@@ -114,29 +114,34 @@ async function fetchStatusGroup(group) {
           statusSourceRole: group.role
         }));
         candidates.push(...filtered);
+        const completedAt = nowJst();
 
         attempts.push({
           role: group.role,
           url,
           attempt,
           startedAt,
+          completedAt,
           status: filtered.length ? "ok" : "warning",
           message: `${filtered.length}候補/${documents.length}ページ`,
           httpReachable: documents.length > 0,
           httpStatus: firstHttpStatus(documents),
           parserStatus: filtered.length ? "success" : "no-candidate",
           failureType: filtered.length ? "" : "parser-no-candidate",
-          errorReason: filtered.length ? "" : `${documents.length}ページから対象候補を抽出できませんでした`
+          errorReason: filtered.length ? "" : `${documents.length}ページから対象候補を抽出できませんでした`,
+          candidateSources: unique(filtered.map((candidate) => candidate.statusSource).filter(Boolean))
         });
 
         if (filtered.length || attempt === group.retryCount) break;
         await sleep(group.retryDelayMs);
       } catch (error) {
+        const completedAt = nowJst();
         attempts.push({
           role: group.role,
           url,
           attempt,
           startedAt,
+          completedAt,
           status: "failed",
           message: error.message,
           httpReachable: Boolean(httpStatusFromError(error.message)),
@@ -431,4 +436,8 @@ function httpStatusFromError(message = "") {
 
 function safeErrorReason(message = "") {
   return String(message || "unknown error").slice(0, 160);
+}
+
+function unique(values) {
+  return Array.from(new Set(values));
 }

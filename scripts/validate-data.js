@@ -78,6 +78,7 @@ function validatePublisherOperation(item) {
   assert(typeof item.publishable === "boolean", `${item.sourceId} requires boolean publishable`);
   assert(authorities.has(item.selectedSourceAuthority), `${item.sourceId} has invalid selectedSourceAuthority`);
   assert(isIsoDateTime(item.generatedAt), `${item.sourceId} requires ISO generatedAt`);
+  assert(item.checkedAt <= item.generatedAt, `${item.sourceId} checkedAt must not be after generatedAt`);
 
   const checkedDate = item.checkedAt.slice(0, 10);
   if (item.publishable) {

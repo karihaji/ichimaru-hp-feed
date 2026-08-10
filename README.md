@@ -56,7 +56,7 @@ npm run fetch:icons
 | `sourceId` | string | 例: `ferry-yakusima2-operation` |
 | `sourceName` | string | 表示名 |
 | `targetDate` | string | `YYYY-MM-DD`。投稿可能時は `checkedAt` の日本時間日付と一致 |
-| `checkedAt` | string | ISO 8601日時。日本時間で生成 |
+| `checkedAt` | string | ISO 8601日時。投稿可能時は採用した情報源の確認完了時刻 |
 | `statusLabel` | string | 取得した運航状態 |
 | `normalizedStatus` | string | `NORMAL`, `CONDITIONAL`, `CANCELLED`, `OTHER_VALID`, `INVALID` |
 | `publishable` | boolean | 自動投稿してよい場合だけ `true` |
@@ -65,7 +65,7 @@ npm run fetch:icons
 | `statusMethod` | string | 採用候補の抽出方式 |
 | `statusReason` | string | 取得側の判断理由 |
 | `activeSource` | string | 共有JSON側のアクティブ情報源 |
-| `generatedAt` | string | 投稿用JSON生成日時 |
+| `generatedAt` | string | 投稿用JSONレコード生成日時 |
 | `statusSource` | string | 採用候補の参照元URL |
 | `diagnostics` | object | primary/fallback試行の安全な診断要約 |
 
@@ -74,6 +74,8 @@ npm run fetch:icons
 優先1は当日の公式一次情報です。公式一次取得が成功し、`targetDate` が日本時間の当日で、`statusLabel` が `NORMAL`、`CONDITIONAL`、`CANCELLED`、`OTHER_VALID` のいずれかへ正規化できる場合、`publishable=true`、`selectedSourceAuthority=official` とします。
 
 優先2は当日のfallback情報です。公式一次情報を同一workflow run内で3回試行しても投稿可能な候補を得られず、fallbackが当日・有効状態・有効時刻である場合のみ、`publishable=true`、`selectedSourceAuthority=fallback` とします。現在の推奨試行間隔は既存の `retryDelayMs=1200` ミリ秒で、GitHub Actionsの実行時間を過度に延ばさないため短めにしています。
+
+`checkedAt` は `selectedSourceAuthority=official` の場合は採用した公式一次attemptの `completedAt`、`selectedSourceAuthority=fallback` の場合は採用したfallback attemptの `completedAt` です。投稿不可の場合は、そのrunで最後に確認できたattemptの `completedAt` を入れます。`generatedAt` は投稿用JSONレコードを作った時刻で、`checkedAt` とは別の意味です。
 
 前日以前の `cached-official` は、共有JSONでは代表状態として残る場合がありますが、投稿用JSONでは当日情報として扱いません。`publishable=false`、`selectedSourceAuthority=none`、`normalizedStatus=INVALID` とし、`targetDate` を当日に書き換えません。
 

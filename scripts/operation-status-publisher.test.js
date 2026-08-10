@@ -8,6 +8,9 @@ import {
 const source = { siteName: "フェリー屋久島2" };
 const sourceId = "ferry-yakusima2-operation";
 const checkedAt = "2026-08-10T07:49:02+09:00";
+const generatedAt = "2026-08-10T07:50:00+09:00";
+const officialCompletedAt = "2026-08-10T07:49:10+09:00";
+const fallbackCompletedAt = "2026-08-10T07:49:20+09:00";
 const today = "2026-08-10";
 const yesterday = "2026-08-09";
 
@@ -20,6 +23,8 @@ test("publishes current-day official primary status", () => {
   assert.equal(record.publishable, true);
   assert.equal(record.selectedSourceAuthority, "official");
   assert.equal(record.normalizedStatus, "NORMAL");
+  assert.equal(record.checkedAt, officialCompletedAt);
+  assert.equal(record.generatedAt, generatedAt);
 });
 
 test("uses official when primary succeeds after one failed attempt", () => {
@@ -56,6 +61,7 @@ test("uses current-day fallback after three unsuccessful primary attempts", () =
   assert.equal(record.publishable, true);
   assert.equal(record.selectedSourceAuthority, "fallback");
   assert.equal(record.normalizedStatus, "CANCELLED");
+  assert.equal(record.checkedAt, fallbackCompletedAt);
   assert.match(record.publicationReason, /fallback/);
 });
 
@@ -64,6 +70,7 @@ test("publisher feed uses current-day fallback while shared decision remains cac
     selected: candidate({
       statusLabel: "欠航",
       targetDate: yesterday,
+      checkedAt: "2026-08-09T15:50:24+09:00",
       statusMethod: "cached-official",
       statusSourceRole: "official"
     }),
@@ -83,6 +90,7 @@ test("publisher feed uses current-day fallback while shared decision remains cac
   assert.equal(record.publishable, true);
   assert.equal(record.targetDate, today);
   assert.equal(record.selectedSourceAuthority, "fallback");
+  assert.equal(record.checkedAt, fallbackCompletedAt);
 });
 
 test("does not publish when only previous-day cached official exists", () => {
@@ -107,6 +115,8 @@ test("does not publish when only previous-day cached official exists", () => {
   assert.equal(record.normalizedStatus, "INVALID");
   assert.equal(record.selectedSourceAuthority, "none");
   assert.equal(record.targetDate, yesterday);
+  assert.equal(record.checkedAt, "2026-08-10T07:49:13+09:00");
+  assert.notEqual(record.checkedAt, "2026-08-09T15:50:24+09:00");
 });
 
 test("does not publish previous-day fallback", () => {
@@ -156,6 +166,17 @@ test("does not rewrite previous-day cached official targetDate", () => {
   assert.equal(cached.targetDate, yesterday);
 });
 
+test("publisher timestamps are ISO 8601 and checkedAt is not after generatedAt", () => {
+  const record = buildPublisherStatusRecord(base({
+    primarySelected: candidate({ statusLabel: "通常運航", statusMethod: "status-label", statusSourceRole: "official" }),
+    primaryAttempts: [successAttempt("official", 1)]
+  }));
+
+  assert.match(record.checkedAt, /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:\d{2})$/);
+  assert.match(record.generatedAt, /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:\d{2})$/);
+  assert.ok(record.checkedAt <= record.generatedAt);
+});
+
 test("normalizes publisher statuses consistently", () => {
   assert.equal(normalizeStatusLabel("通常運航予定"), "NORMAL");
   assert.equal(normalizeStatusLabel("条件付き運航"), "CONDITIONAL");
@@ -187,6 +208,7 @@ test("reconstructs the 2026-08-10 publisher contract case", () => {
   assert.equal(record.statusLabel, "欠航");
   assert.equal(record.normalizedStatus, "CANCELLED");
   assert.equal(record.selectedSourceAuthority, "fallback");
+  assert.equal(record.checkedAt, fallbackCompletedAt);
 });
 
 function base(overrides = {}) {
@@ -194,7 +216,7 @@ function base(overrides = {}) {
     source,
     sourceId,
     checkedAt,
-    generatedAt: checkedAt,
+    generatedAt,
     primarySelected: null,
     fallbackSelected: null,
     primaryAttempts: [],
@@ -228,11 +250,13 @@ function successAttempt(role, attempt) {
     url: role === "official" ? "https://ferryyakusima2.com/" : "http://www.norimono-info.com/area_main.php?disp=area&pref=kago&lang=",
     attempt,
     startedAt: checkedAt,
+    completedAt: role === "official" ? officialCompletedAt : fallbackCompletedAt,
     httpReachable: true,
     httpStatus: 200,
     parserStatus: "success",
     failureType: "",
-    errorReason: ""
+    errorReason: "",
+    candidateSources: ["https://example.test/status"]
   };
 }
 
@@ -242,6 +266,7 @@ function failedAttempt(role, attempt) {
     url: "https://ferryyakusima2.com/",
     attempt,
     startedAt: checkedAt,
+    completedAt: `2026-08-10T07:49:1${attempt}+09:00`,
     httpReachable: false,
     httpStatus: null,
     parserStatus: "not-run",
