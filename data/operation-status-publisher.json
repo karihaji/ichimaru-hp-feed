@@ -4,7 +4,7 @@
     "sourceId": "cosmoline-operation",
     "sourceName": "コスモライン",
     "targetDate": "2026-08-10",
-    "checkedAt": "2026-08-10T07:49:02+09:00",
+    "checkedAt": "2026-08-10T10:28:37+09:00",
     "statusLabel": "通常運航",
     "normalizedStatus": "NORMAL",
     "publishable": true,
@@ -13,10 +13,33 @@
     "statusMethod": "operation-block",
     "statusReason": "primary-ok",
     "activeSource": "official",
-    "generatedAt": "2026-08-10T07:49:02+09:00",
+    "generatedAt": "2026-08-10T10:28:37+09:00",
     "statusSource": "https://cosmoline.jp/ship-information",
     "diagnostics": {
-      "primaryAttempts": [],
+      "primaryAttempts": [
+        {
+          "role": "official",
+          "url": "https://cosmoline.jp/ship-information",
+          "attempt": 1,
+          "startedAt": "2026-08-10T10:28:37+09:00",
+          "httpReachable": true,
+          "httpStatus": 200,
+          "parserStatus": "success",
+          "failureType": "",
+          "errorReason": "10候補/1ページ"
+        },
+        {
+          "role": "official",
+          "url": "https://cosmoline.jp/",
+          "attempt": 1,
+          "startedAt": "2026-08-10T10:28:40+09:00",
+          "httpReachable": true,
+          "httpStatus": 200,
+          "parserStatus": "success",
+          "failureType": "",
+          "errorReason": "4候補/1ページ"
+        }
+      ],
       "fallbackAttempts": []
     }
   },
@@ -25,64 +48,53 @@
     "sourceId": "ferry-yakusima2-operation",
     "sourceName": "フェリー屋久島2",
     "targetDate": "2026-08-10",
-    "checkedAt": "2026-08-10T07:49:02+09:00",
+    "checkedAt": "2026-08-10T10:28:37+09:00",
     "statusLabel": "欠航",
     "normalizedStatus": "CANCELLED",
     "publishable": true,
-    "publicationReason": "official primary status unavailable after 3 attempts; current-day fallback selected",
-    "selectedSourceAuthority": "fallback",
-    "statusMethod": "matched-block",
-    "statusReason": "primary-failed-3-times-fallback-publisher",
-    "activeSource": "fallback",
-    "generatedAt": "2026-08-10T07:49:02+09:00",
-    "statusSource": "http://www.norimono-info.com/area_main.php?disp=area&pref=kago&lang=",
+    "publicationReason": "current-day official status selected",
+    "selectedSourceAuthority": "official",
+    "statusMethod": "status-label",
+    "statusReason": "primary-ok",
+    "activeSource": "official",
+    "generatedAt": "2026-08-10T10:28:37+09:00",
+    "statusSource": "https://ferryyakusima2.com/",
     "diagnostics": {
       "primaryAttempts": [
         {
           "role": "official",
           "url": "https://ferryyakusima2.com/",
           "attempt": 1,
-          "startedAt": "2026-08-10T07:49:02+09:00",
-          "httpReachable": false,
-          "httpStatus": null,
-          "parserStatus": "not-run",
-          "failureType": "fetch-error",
-          "errorReason": "fetch failed"
-        },
-        {
-          "role": "official",
-          "url": "https://ferryyakusima2.com/",
-          "attempt": 2,
-          "startedAt": "2026-08-10T07:49:02+09:00",
-          "httpReachable": false,
-          "httpStatus": null,
-          "parserStatus": "not-run",
-          "failureType": "fetch-error",
-          "errorReason": "fetch failed"
-        },
-        {
-          "role": "official",
-          "url": "https://ferryyakusima2.com/",
-          "attempt": 3,
-          "startedAt": "2026-08-10T07:49:02+09:00",
-          "httpReachable": false,
-          "httpStatus": null,
-          "parserStatus": "not-run",
-          "failureType": "fetch-error",
-          "errorReason": "fetch failed"
+          "startedAt": "2026-08-10T10:28:43+09:00",
+          "httpReachable": true,
+          "httpStatus": 200,
+          "parserStatus": "success",
+          "failureType": "",
+          "errorReason": "3候補/1ページ"
         }
       ],
       "fallbackAttempts": [
         {
           "role": "fallback",
-          "url": "http://www.norimono-info.com/area_main.php?disp=area&pref=kago&lang=",
+          "url": "http://www.norimono-info.com/frame_set.php?disp=area&pref=kago",
           "attempt": 1,
-          "startedAt": "2026-08-10T07:49:02+09:00",
+          "startedAt": "2026-08-10T10:28:44+09:00",
           "httpReachable": true,
           "httpStatus": 200,
           "parserStatus": "success",
           "failureType": "",
-          "errorReason": ""
+          "errorReason": "1候補/8ページ"
+        },
+        {
+          "role": "fallback",
+          "url": "http://www.norimono-info.com/area_main.php?disp=area&pref=kago&lang=",
+          "attempt": 1,
+          "startedAt": "2026-08-10T10:28:46+09:00",
+          "httpReachable": true,
+          "httpStatus": 200,
+          "parserStatus": "success",
+          "failureType": "",
+          "errorReason": "1候補/1ページ"
         }
       ]
     }
