@@ -53,10 +53,12 @@ for (const source of config.officialSources || []) {
   ];
 
   results.push(toOperationResult(source, operation, sourceId, decision, checks));
+  const publisherGeneratedAt = nowJst();
   publisherResults.push(buildPublisherStatusRecord({
     source,
     sourceId,
     checkedAt,
+    generatedAt: publisherGeneratedAt,
     primarySelected,
     fallbackSelected,
     primaryAttempts: primaryFetch.attempts,

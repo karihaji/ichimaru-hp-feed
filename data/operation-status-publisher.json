@@ -13,7 +13,7 @@
     "statusMethod": "operation-block",
     "statusReason": "primary-ok",
     "activeSource": "official",
-    "generatedAt": "2026-08-10T10:52:53+09:00",
+    "generatedAt": "2026-08-10T10:53:07+09:00",
     "statusSource": "https://cosmoline.jp/ship-information",
     "diagnostics": {
       "primaryAttempts": [
@@ -65,7 +65,7 @@
     "statusMethod": "status-label",
     "statusReason": "primary-ok",
     "activeSource": "official",
-    "generatedAt": "2026-08-10T10:52:53+09:00",
+    "generatedAt": "2026-08-10T10:53:07+09:00",
     "statusSource": "https://ferryyakusima2.com/",
     "diagnostics": {
       "primaryAttempts": [
