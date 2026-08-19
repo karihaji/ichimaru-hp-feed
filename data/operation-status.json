@@ -5,7 +5,7 @@
     "statusLabel": "通常運航",
     "targetDate": "2026-08-19",
     "url": "https://cosmoline.jp/ship-information",
-    "checkedAt": "2026-08-19T07:39:45+09:00",
+    "checkedAt": "2026-08-19T11:09:27+09:00",
     "sourceId": "cosmoline-operation",
     "statusSource": "https://cosmoline.jp/ship-information",
     "statusSourceRole": "official",
@@ -71,39 +71,23 @@
     "statusLabel": "欠航",
     "targetDate": "2026-08-19",
     "url": "http://www.norimono-info.com/frame_set.php?disp=area&pref=kago",
-    "checkedAt": "2026-08-19T07:39:45+09:00",
+    "checkedAt": "2026-08-19T11:09:27+09:00",
     "sourceId": "ferry-yakusima2-operation",
     "statusSource": "https://ferryyakusima2.com/",
     "statusSourceRole": "official",
-    "statusMethod": "status-label",
+    "statusMethod": "cached-official",
     "statusEvidence": "欠航",
-    "statusAgreement": "official-only",
+    "statusAgreement": "cached-with-fallback",
     "activeSource": "official",
-    "statusReason": "primary-ok",
+    "statusReason": "primary-failed-retaining-last",
     "statusChecks": [
       {
         "statusLabel": "欠航",
         "targetDate": "2026-08-19",
-        "statusSource": "https://ferryyakusima2.com/",
-        "statusSourceRole": "official",
-        "statusMethod": "status-label",
+        "statusSource": "http://www.norimono-info.com/area_main.php?disp=area&pref=kago&lang=",
+        "statusSourceRole": "fallback",
+        "statusMethod": "matched-block",
         "statusEvidence": "欠航"
-      },
-      {
-        "statusLabel": "欠航",
-        "targetDate": "2026-08-19",
-        "statusSource": "https://ferryyakusima2.com/",
-        "statusSourceRole": "official",
-        "statusMethod": "operation-block",
-        "statusEvidence": "欠航"
-      },
-      {
-        "statusLabel": "欠航",
-        "targetDate": "2026-08-19",
-        "statusSource": "https://ferryyakusima2.com/",
-        "statusSourceRole": "official",
-        "statusMethod": "operation-block",
-        "statusEvidence": "運行状況 は 欠航 です。"
       }
     ]
   }
