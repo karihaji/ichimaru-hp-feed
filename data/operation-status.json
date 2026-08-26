@@ -5,12 +5,12 @@
     "statusLabel": "欠航",
     "targetDate": "2026-08-26",
     "url": "https://cosmoline.jp/ship-information",
-    "checkedAt": "2026-08-26T07:43:16+09:00",
+    "checkedAt": "2026-08-26T11:16:25+09:00",
     "sourceId": "cosmoline-operation",
     "statusSource": "https://cosmoline.jp/ship-information",
     "statusSourceRole": "official",
     "statusMethod": "operation-block",
-    "statusEvidence": "運航情報 当日の運航状況は朝7時に発表いたします。 1週間先の予定は下記になります。 運航予定ですので変更があった場合は随時更新していきますのでご乗船予定のお客様はご確認の上お越しください。 8/26 台風接近による海上荒天のため欠航 8/27 通常運航予定 8/28 通常運航予定 8/29 通常運航予定 8/30 運休 8/31 通常運航予定 9/1 通常",
+    "statusEvidence": "運航情報 当日の運航状況は朝7時に発表いたします。 1週間先の予定は下記になります。 運航予定ですので変更があった場合は随時更新していきますのでご乗船予定のお客様はご確認の上お越しください。 8/26 台風接近による海上荒天のため欠航 8/27 条件付き運航または欠航の可能性有 8/28 通常運航予定 8/29 通常運航予定 8/30 運休 8/31 通常運",
     "statusAgreement": "official-only",
     "activeSource": "official",
     "statusReason": "primary-ok",
@@ -21,7 +21,7 @@
         "statusSource": "https://cosmoline.jp/ship-information",
         "statusSourceRole": "official",
         "statusMethod": "operation-block",
-        "statusEvidence": "運航情報 当日の運航状況は朝7時に発表いたします。 1週間先の予定は下記になります。 運航予定ですので変更があった場合は随時更新していきますのでご乗船予定のお客様はご確認の上お越しください。 8/26 台風接近による海上荒天のため欠航 8/27 通常運航予定 8/28 通常運航予定 8/29 通常運航予定 8/30 運休 8/31 通常運航予定 9/1 通常"
+        "statusEvidence": "運航情報 当日の運航状況は朝7時に発表いたします。 1週間先の予定は下記になります。 運航予定ですので変更があった場合は随時更新していきますのでご乗船予定のお客様はご確認の上お越しください。 8/26 台風接近による海上荒天のため欠航 8/27 条件付き運航または欠航の可能性有 8/28 通常運航予定 8/29 通常運航予定 8/30 運休 8/31 通常運"
       },
       {
         "statusLabel": "欠航",
@@ -37,7 +37,7 @@
         "statusSource": "https://cosmoline.jp/ship-information",
         "statusSourceRole": "official",
         "statusMethod": "dated-status-line",
-        "statusEvidence": "8/26 台風接近による海上荒天のため欠航 8/27 通常運航予定 8/28 通常運航予定 8/29 通常"
+        "statusEvidence": "8/26 台風接近による海上荒天のため欠航 8/27 条件付き運航または欠航の可能性有 8/28 通常運航"
       },
       {
         "statusLabel": "欠航",
@@ -71,40 +71,16 @@
     "statusLabel": "欠航",
     "targetDate": "2026-08-26",
     "url": "http://www.norimono-info.com/frame_set.php?disp=area&pref=kago",
-    "checkedAt": "2026-08-26T07:43:16+09:00",
+    "checkedAt": "2026-08-26T11:16:25+09:00",
     "sourceId": "ferry-yakusima2-operation",
     "statusSource": "https://ferryyakusima2.com/",
     "statusSourceRole": "official",
-    "statusMethod": "status-label",
+    "statusMethod": "cached-official",
     "statusEvidence": "欠航",
-    "statusAgreement": "matched",
+    "statusAgreement": "cached-with-fallback",
     "activeSource": "official",
-    "statusReason": "primary-ok",
+    "statusReason": "primary-failed-retaining-last",
     "statusChecks": [
-      {
-        "statusLabel": "欠航",
-        "targetDate": "2026-08-26",
-        "statusSource": "https://ferryyakusima2.com/",
-        "statusSourceRole": "official",
-        "statusMethod": "status-label",
-        "statusEvidence": "欠航"
-      },
-      {
-        "statusLabel": "欠航",
-        "targetDate": "2026-08-26",
-        "statusSource": "https://ferryyakusima2.com/",
-        "statusSourceRole": "official",
-        "statusMethod": "operation-block",
-        "statusEvidence": "欠航"
-      },
-      {
-        "statusLabel": "欠航",
-        "targetDate": "2026-08-26",
-        "statusSource": "https://ferryyakusima2.com/",
-        "statusSourceRole": "official",
-        "statusMethod": "operation-block",
-        "statusEvidence": "運行状況 は 欠航 です。"
-      },
       {
         "statusLabel": "欠航",
         "targetDate": "2026-08-26",
