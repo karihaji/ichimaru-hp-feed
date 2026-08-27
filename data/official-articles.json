@@ -1,5 +1,39 @@
 [
   {
+    "id": "6604ade3290355c0",
+    "type": "official-article",
+    "sourceName": "T-MAX BOWL",
+    "categoryGroup": "ボウリング",
+    "itemType": "T-MAXリーグ",
+    "subCategory": "T-LEAGUE",
+    "title": "2026 T-LEAGUE 第3節 1回戦の結果を公開しました。",
+    "url": "https://www.t-maxbowl.com/10768.html",
+    "publishedAt": "2026-08-27",
+    "important": false,
+    "thumbnail": "https://www.t-maxbowl.com/images/league_02.gif",
+    "favicon": "assets/site-icons/t-max-bowl.ico",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
+    "sourceOrder": 0,
+    "sourceId": "t-max-bowl"
+  },
+  {
+    "id": "4906b17dc017a79d",
+    "type": "official-article",
+    "sourceName": "T-MAX BOWL",
+    "categoryGroup": "ボウリング",
+    "itemType": "T-MAXリーグ",
+    "subCategory": "T-LEAGUE",
+    "title": "2026 T-LEAGUE 第2節 12回戦の結果を公開しました。",
+    "url": "https://www.t-maxbowl.com/10629.html",
+    "publishedAt": "2026-08-27",
+    "important": false,
+    "thumbnail": "https://www.t-maxbowl.com/images/league_02.gif",
+    "favicon": "assets/site-icons/t-max-bowl.ico",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
+    "sourceOrder": 0,
+    "sourceId": "t-max-bowl"
+  },
+  {
     "id": "1d6a72089d39c8a1",
     "type": "official-article",
     "sourceName": "サンライトゾーン",
@@ -12,7 +46,7 @@
     "important": false,
     "thumbnail": "https://sunlight-zone.com/images/league_02.gif",
     "favicon": "assets/site-icons/sunlight-zone.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceOrder": 0,
     "sourceId": "sunlight-zone"
   },
@@ -29,7 +63,7 @@
     "important": false,
     "thumbnail": "https://sunlight-zone.com/images/league_02.gif",
     "favicon": "assets/site-icons/sunlight-zone.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceOrder": 1,
     "sourceId": "sunlight-zone"
   },
@@ -46,7 +80,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/sunlight-zone.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceOrder": 0,
     "sourceId": "sunlight-zone"
   },
@@ -63,7 +97,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/sunlight-zone.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceOrder": 1,
     "sourceId": "sunlight-zone"
   },
@@ -80,7 +114,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/t-max-bowl.ico",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceOrder": 0,
     "sourceId": "t-max-bowl"
   },
@@ -97,7 +131,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/t-max-bowl.ico",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceOrder": 0,
     "sourceId": "t-max-bowl"
   },
@@ -114,7 +148,7 @@
     "important": false,
     "thumbnail": "https://www.t-maxbowl.com/wp-content/uploads/2026/08/%E7%89%B9%E5%88%A5%E6%96%99%E9%87%91%E8%A1%A82026%E3%80%80-576x815.jpg",
     "favicon": "assets/site-icons/t-max-bowl.ico",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceOrder": 0,
     "sourceId": "t-max-bowl"
   },
@@ -131,7 +165,7 @@
     "important": false,
     "thumbnail": "https://www.t-maxbowl.com/wp-content/uploads/2026/07/2026.8%E6%9C%88%E6%96%B0%E6%96%99%E9%87%91-576x815.jpg",
     "favicon": "assets/site-icons/t-max-bowl.ico",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceOrder": 0,
     "sourceId": "t-max-bowl"
   },
@@ -148,7 +182,7 @@
     "important": false,
     "thumbnail": "https://www.t-maxbowl.com/images/league_01.gif",
     "favicon": "assets/site-icons/t-max-bowl.ico",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceOrder": 0,
     "sourceId": "t-max-bowl"
   },
@@ -165,7 +199,7 @@
     "important": false,
     "thumbnail": "https://www.t-maxbowl.com/images/league_02.gif",
     "favicon": "assets/site-icons/t-max-bowl.ico",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceOrder": 0,
     "sourceId": "t-max-bowl"
   },
@@ -182,7 +216,7 @@
     "important": false,
     "thumbnail": "https://www.t-maxbowl.com/images/league_02.gif",
     "favicon": "assets/site-icons/t-max-bowl.ico",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceOrder": 0,
     "sourceId": "t-max-bowl"
   },
@@ -199,7 +233,7 @@
     "important": false,
     "thumbnail": "https://www.t-maxbowl.com/images/league_02.gif",
     "favicon": "assets/site-icons/t-max-bowl.ico",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceOrder": 1,
     "sourceId": "t-max-bowl"
   },
@@ -216,7 +250,7 @@
     "important": false,
     "thumbnail": "https://www.t-maxbowl.com/images/league_02.gif",
     "favicon": "assets/site-icons/t-max-bowl.ico",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "t-max-bowl",
     "sourceOrder": 2
   },
@@ -267,7 +301,7 @@
     "important": true,
     "thumbnail": "",
     "favicon": "assets/site-icons/ferry-yakusima2.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceOrder": 0,
     "sourceId": "ferry-yakusima2"
   },
@@ -301,7 +335,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/sunlight-zone.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceOrder": 0,
     "sourceId": "sunlight-zone"
   },
@@ -335,7 +369,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/sunlight-zone.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceOrder": 0,
     "sourceId": "sunlight-zone"
   },
@@ -352,7 +386,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/sunlight-zone.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceOrder": 0,
     "sourceId": "sunlight-zone"
   },
@@ -369,7 +403,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/sunlight-zone.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceOrder": 0,
     "sourceId": "sunlight-zone"
   },
@@ -386,7 +420,7 @@
     "important": false,
     "thumbnail": "https://sunlight-zone.com/images/league_01.jpg",
     "favicon": "assets/site-icons/sunlight-zone.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceOrder": 0,
     "sourceId": "sunlight-zone"
   },
@@ -437,7 +471,7 @@
     "important": false,
     "thumbnail": "https://sunlight-zone.com/images/league_02.gif",
     "favicon": "assets/site-icons/sunlight-zone.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceOrder": 0,
     "sourceId": "sunlight-zone"
   },
@@ -471,7 +505,7 @@
     "important": false,
     "thumbnail": "https://sunlight-zone.com/images/league_02.gif",
     "favicon": "assets/site-icons/sunlight-zone.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceOrder": 1,
     "sourceId": "sunlight-zone"
   },
@@ -607,7 +641,7 @@
     "important": false,
     "thumbnail": "https://sunlight-zone.com/images/league_02.gif",
     "favicon": "assets/site-icons/sunlight-zone.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceOrder": 0,
     "sourceId": "sunlight-zone"
   },
@@ -641,7 +675,7 @@
     "important": false,
     "thumbnail": "https://www.t-maxbowl.com/images/league_02.gif",
     "favicon": "assets/site-icons/t-max-bowl.ico",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceOrder": 0,
     "sourceId": "t-max-bowl"
   },
@@ -777,7 +811,7 @@
     "important": false,
     "thumbnail": "https://sunlight-zone.com/images/league_02.gif",
     "favicon": "assets/site-icons/sunlight-zone.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "sunlight-zone",
     "sourceOrder": 5
   },
@@ -794,7 +828,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/ichimaru-grp.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceOrder": 0,
     "sourceId": "ichimaru-grp"
   },
@@ -814,6 +848,23 @@
     "fetchedAt": "2026-08-27T19:40:04+09:00",
     "sourceOrder": 0,
     "sourceId": "t-max-bowl"
+  },
+  {
+    "id": "8a4bce18bc6f471b",
+    "type": "official-article",
+    "sourceName": "T-MAX BOWL",
+    "categoryGroup": "ボウリング",
+    "itemType": "T-MAXリーグ",
+    "subCategory": "T-LEAGUE",
+    "title": "平成26年度 優勝者の結果を公開しました。",
+    "url": "https://www.t-maxbowl.com/9769.html",
+    "publishedAt": "2026-08-06",
+    "important": false,
+    "thumbnail": "https://www.t-maxbowl.com/images/league_02.gif",
+    "favicon": "assets/site-icons/t-max-bowl.ico",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
+    "sourceId": "t-max-bowl",
+    "sourceOrder": 15
   },
   {
     "id": "c823e381450465ed",
@@ -879,7 +930,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/tsuruhome.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceOrder": 0,
     "sourceId": "tsuruhome"
   },
@@ -896,7 +947,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/tsuruhome.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceOrder": 1,
     "sourceId": "tsuruhome"
   },
@@ -964,7 +1015,7 @@
     "important": false,
     "thumbnail": "https://sunlight-zone.com/images/league_02.gif",
     "favicon": "assets/site-icons/sunlight-zone.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "sunlight-zone",
     "sourceOrder": 6
   },
@@ -1049,7 +1100,7 @@
     "important": false,
     "thumbnail": "https://www.t-maxbowl.com/images/league_02.gif",
     "favicon": "assets/site-icons/t-max-bowl.ico",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceOrder": 0,
     "sourceId": "t-max-bowl"
   },
@@ -1083,7 +1134,7 @@
     "important": false,
     "thumbnail": "https://www.t-maxbowl.com/images/league_02.gif",
     "favicon": "assets/site-icons/t-max-bowl.ico",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceOrder": 0,
     "sourceId": "t-max-bowl"
   },
@@ -1236,7 +1287,7 @@
     "important": false,
     "thumbnail": "https://sunlight-zone.com/images/league_02.gif",
     "favicon": "assets/site-icons/sunlight-zone.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "sunlight-zone",
     "sourceOrder": 7
   },
@@ -1258,21 +1309,21 @@
     "sourceOrder": 0
   },
   {
-    "id": "8a4bce18bc6f471b",
+    "id": "6d45d5a45a8aae9e",
     "type": "official-article",
     "sourceName": "T-MAX BOWL",
     "categoryGroup": "ボウリング",
     "itemType": "T-MAXリーグ",
     "subCategory": "T-LEAGUE",
-    "title": "平成26年度 優勝者の結果を公開しました。",
-    "url": "https://www.t-maxbowl.com/9769.html",
+    "title": "平成25年度 優勝者の結果を公開しました。",
+    "url": "https://www.t-maxbowl.com/9766.html",
     "publishedAt": "2026-07-23",
     "important": false,
     "thumbnail": "https://www.t-maxbowl.com/images/league_02.gif",
     "favicon": "assets/site-icons/t-max-bowl.ico",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "t-max-bowl",
-    "sourceOrder": 15
+    "sourceOrder": 16
   },
   {
     "id": "d124bc5f3f6305e4",
@@ -1423,7 +1474,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/kyusho-port.svg",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceOrder": 0,
     "sourceId": "kyusho-port"
   },
@@ -1491,7 +1542,7 @@
     "important": false,
     "thumbnail": "https://sunlight-zone.com/images/league_02.gif",
     "favicon": "assets/site-icons/sunlight-zone.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "sunlight-zone",
     "sourceOrder": 8
   },
@@ -1508,7 +1559,7 @@
     "important": false,
     "thumbnail": "https://www.t-maxbowl.com/images/league_02.gif",
     "favicon": "assets/site-icons/t-max-bowl.ico",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceOrder": 0,
     "sourceId": "t-max-bowl"
   },
@@ -1530,21 +1581,21 @@
     "sourceOrder": 11
   },
   {
-    "id": "6d45d5a45a8aae9e",
+    "id": "8c70ed15ab5baf80",
     "type": "official-article",
     "sourceName": "T-MAX BOWL",
     "categoryGroup": "ボウリング",
     "itemType": "T-MAXリーグ",
     "subCategory": "T-LEAGUE",
-    "title": "平成25年度 優勝者の結果を公開しました。",
-    "url": "https://www.t-maxbowl.com/9766.html",
+    "title": "平成24年度 優勝者の結果を公開しました。",
+    "url": "https://www.t-maxbowl.com/9764.html",
     "publishedAt": "2026-07-16",
     "important": false,
     "thumbnail": "https://www.t-maxbowl.com/images/league_02.gif",
     "favicon": "assets/site-icons/t-max-bowl.ico",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "t-max-bowl",
-    "sourceOrder": 16
+    "sourceOrder": 17
   },
   {
     "id": "d2e641179b916142",
@@ -1661,7 +1712,7 @@
     "important": true,
     "thumbnail": "",
     "favicon": "assets/site-icons/cosmoline.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceOrder": 0,
     "sourceId": "cosmoline"
   },
@@ -1717,23 +1768,6 @@
     "sourceId": "sunlight-zone"
   },
   {
-    "id": "4906b17dc017a79d",
-    "type": "official-article",
-    "sourceName": "T-MAX BOWL",
-    "categoryGroup": "ボウリング",
-    "itemType": "T-MAXリーグ",
-    "subCategory": "T-LEAGUE",
-    "title": "2026 T-LEAGUE 第2節 12回戦の結果を公開しました。",
-    "url": "https://www.t-maxbowl.com/10629.html",
-    "publishedAt": "2026-07-09",
-    "important": false,
-    "thumbnail": "https://www.t-maxbowl.com/images/league_02.gif",
-    "favicon": "assets/site-icons/t-max-bowl.ico",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
-    "sourceOrder": 0,
-    "sourceId": "t-max-bowl"
-  },
-  {
     "id": "54380ee697c96927",
     "type": "official-article",
     "sourceName": "T-MAX BOWL",
@@ -1751,21 +1785,21 @@
     "sourceOrder": 12
   },
   {
-    "id": "8c70ed15ab5baf80",
+    "id": "727e7d76bdcd26e6",
     "type": "official-article",
     "sourceName": "T-MAX BOWL",
     "categoryGroup": "ボウリング",
     "itemType": "T-MAXリーグ",
     "subCategory": "T-LEAGUE",
-    "title": "平成24年度 優勝者の結果を公開しました。",
-    "url": "https://www.t-maxbowl.com/9764.html",
+    "title": "平成23年度 優勝者の結果を公開しました。",
+    "url": "https://www.t-maxbowl.com/9762.html",
     "publishedAt": "2026-07-09",
     "important": false,
     "thumbnail": "https://www.t-maxbowl.com/images/league_02.gif",
     "favicon": "assets/site-icons/t-max-bowl.ico",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "t-max-bowl",
-    "sourceOrder": 17
+    "sourceOrder": 18
   },
   {
     "id": "3036e412e119daf6",
@@ -1780,7 +1814,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/ichimaru-grp.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceOrder": 0,
     "sourceId": "ichimaru-grp"
   },
@@ -1848,7 +1882,7 @@
     "important": true,
     "thumbnail": "",
     "favicon": "assets/site-icons/cosmoline.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceOrder": 0,
     "sourceId": "cosmoline"
   },
@@ -1882,7 +1916,7 @@
     "important": true,
     "thumbnail": "",
     "favicon": "assets/site-icons/cosmoline.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceOrder": 0,
     "sourceId": "cosmoline"
   },
@@ -1933,7 +1967,7 @@
     "important": false,
     "thumbnail": "https://sunlight-zone.com/images/league_02.gif",
     "favicon": "assets/site-icons/sunlight-zone.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceOrder": 0,
     "sourceId": "sunlight-zone"
   },
@@ -1984,7 +2018,7 @@
     "important": false,
     "thumbnail": "https://sunlight-zone.com/images/league_02.gif",
     "favicon": "assets/site-icons/sunlight-zone.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "sunlight-zone",
     "sourceOrder": 13
   },
@@ -2074,23 +2108,6 @@
     "sourceOrder": 13
   },
   {
-    "id": "727e7d76bdcd26e6",
-    "type": "official-article",
-    "sourceName": "T-MAX BOWL",
-    "categoryGroup": "ボウリング",
-    "itemType": "T-MAXリーグ",
-    "subCategory": "T-LEAGUE",
-    "title": "平成23年度 優勝者の結果を公開しました。",
-    "url": "https://www.t-maxbowl.com/9762.html",
-    "publishedAt": "2026-07-02",
-    "important": false,
-    "thumbnail": "https://www.t-maxbowl.com/images/league_02.gif",
-    "favicon": "assets/site-icons/t-max-bowl.ico",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
-    "sourceId": "t-max-bowl",
-    "sourceOrder": 18
-  },
-  {
     "id": "75e834ee23a65e5b",
     "type": "official-article",
     "sourceName": "鶴丸ホーム明和",
@@ -2103,7 +2120,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/tsuruhome.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceOrder": 2,
     "sourceId": "tsuruhome"
   },
@@ -2154,7 +2171,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/ichimaru-grp.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceOrder": 0,
     "sourceId": "ichimaru-grp"
   },
@@ -2324,7 +2341,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/ichimaru-grp.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceOrder": 0,
     "sourceId": "ichimaru-grp"
   },
@@ -2341,7 +2358,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/cosmoline.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "cosmoline",
     "sourceOrder": 0
   },
@@ -2392,7 +2409,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/ferry-yakusima2.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "ferry-yakusima2",
     "sourceOrder": 0
   },
@@ -2409,7 +2426,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/ichimaru-grp.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceOrder": 1,
     "sourceId": "ichimaru-grp"
   },
@@ -2426,7 +2443,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/cosmoline.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "cosmoline",
     "sourceOrder": 1
   },
@@ -2443,7 +2460,7 @@
     "important": true,
     "thumbnail": "",
     "favicon": "assets/site-icons/cosmoline.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "cosmoline",
     "sourceOrder": 2
   },
@@ -2460,7 +2477,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/tsuruhome.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceOrder": 3,
     "sourceId": "tsuruhome"
   },
@@ -2477,7 +2494,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/kyusho-port.svg",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "kyusho-port",
     "sourceOrder": 0
   },
@@ -2494,7 +2511,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/kyusho-port.svg",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "kyusho-port",
     "sourceOrder": 1
   },
@@ -2511,7 +2528,7 @@
     "important": false,
     "thumbnail": "https://www.t-maxbowl.com/images/league_02.gif",
     "favicon": "assets/site-icons/t-max-bowl.ico",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "t-max-bowl",
     "sourceOrder": 19
   },
@@ -2528,7 +2545,7 @@
     "important": true,
     "thumbnail": "",
     "favicon": "assets/site-icons/cosmoline.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "cosmoline",
     "sourceOrder": 3
   },
@@ -2562,7 +2579,7 @@
     "important": false,
     "thumbnail": "https://sunlight-zone.com/images/league_02.gif",
     "favicon": "assets/site-icons/sunlight-zone.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "sunlight-zone",
     "sourceOrder": 9
   },
@@ -2596,7 +2613,7 @@
     "important": true,
     "thumbnail": "",
     "favicon": "assets/site-icons/ferry-yakusima2.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "ferry-yakusima2",
     "sourceOrder": 1
   },
@@ -2613,7 +2630,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/tsuruhome.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "tsuruhome",
     "sourceOrder": 0
   },
@@ -2630,7 +2647,7 @@
     "important": true,
     "thumbnail": "",
     "favicon": "assets/site-icons/cosmoline.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "cosmoline",
     "sourceOrder": 4
   },
@@ -2647,7 +2664,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/ichimaru-grp.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceOrder": 2,
     "sourceId": "ichimaru-grp"
   },
@@ -2664,7 +2681,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/tsurutaxi.jpg",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "tsurutaxi",
     "sourceOrder": 0
   },
@@ -2681,7 +2698,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/ichimaru-grp.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceOrder": 3,
     "sourceId": "ichimaru-grp"
   },
@@ -2698,7 +2715,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/ichimaru-grp.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceOrder": 4,
     "sourceId": "ichimaru-grp"
   },
@@ -2715,7 +2732,7 @@
     "important": true,
     "thumbnail": "",
     "favicon": "assets/site-icons/cosmoline.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "cosmoline",
     "sourceOrder": 5
   },
@@ -2732,7 +2749,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/ichimaru-grp.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceOrder": 5,
     "sourceId": "ichimaru-grp"
   },
@@ -2749,7 +2766,7 @@
     "important": true,
     "thumbnail": "",
     "favicon": "assets/site-icons/ferry-yakusima2.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "ferry-yakusima2",
     "sourceOrder": 2
   },
@@ -2766,7 +2783,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/ichimaru-grp.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceOrder": 6,
     "sourceId": "ichimaru-grp"
   },
@@ -2783,7 +2800,7 @@
     "important": true,
     "thumbnail": "",
     "favicon": "assets/site-icons/cosmoline.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "cosmoline",
     "sourceOrder": 6
   },
@@ -2800,7 +2817,7 @@
     "important": true,
     "thumbnail": "",
     "favicon": "assets/site-icons/ferry-yakusima2.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "ferry-yakusima2",
     "sourceOrder": 3
   },
@@ -2817,7 +2834,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/ferry-yakusima2.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "ferry-yakusima2",
     "sourceOrder": 4
   },
@@ -2936,7 +2953,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/ferry-yakusima2.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "ferry-yakusima2",
     "sourceOrder": 5
   },
@@ -2953,7 +2970,7 @@
     "important": false,
     "thumbnail": "https://sunlight-zone.com/images/league_02.gif",
     "favicon": "assets/site-icons/sunlight-zone.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "sunlight-zone",
     "sourceOrder": 12
   },
@@ -2970,7 +2987,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/tsurutaxi.jpg",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "tsurutaxi",
     "sourceOrder": 1
   },
@@ -2987,7 +3004,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/ferry-yakusima2.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "ferry-yakusima2",
     "sourceOrder": 6
   },
@@ -3004,7 +3021,7 @@
     "important": false,
     "thumbnail": "https://sunlight-zone.com/images/league_02.gif",
     "favicon": "assets/site-icons/sunlight-zone.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "sunlight-zone",
     "sourceOrder": 10
   },
@@ -3021,7 +3038,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/ferry-yakusima2.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "ferry-yakusima2",
     "sourceOrder": 7
   },
@@ -3038,7 +3055,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/ferry-yakusima2.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "ferry-yakusima2",
     "sourceOrder": 8
   },
@@ -3055,7 +3072,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/tsurutaxi.jpg",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "tsurutaxi",
     "sourceOrder": 2
   },
@@ -3072,7 +3089,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/tsurutaxi.jpg",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "tsurutaxi",
     "sourceOrder": 3
   },
@@ -3106,7 +3123,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/tsurutaxi.jpg",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "tsurutaxi",
     "sourceOrder": 4
   },
@@ -3123,7 +3140,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/tsurutaxi.jpg",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "tsurutaxi",
     "sourceOrder": 5
   },
@@ -3140,7 +3157,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/tsurutaxi.jpg",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "tsurutaxi",
     "sourceOrder": 6
   },
@@ -3157,7 +3174,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/tsuruhome.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "tsuruhome",
     "sourceOrder": 1
   },
@@ -3174,7 +3191,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/tsuruhome.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "tsuruhome",
     "sourceOrder": 2
   },
@@ -3191,7 +3208,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/tsuruhome.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "tsuruhome",
     "sourceOrder": 3
   },
@@ -3208,7 +3225,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/tsuruhome.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "tsuruhome",
     "sourceOrder": 4
   },
@@ -3225,7 +3242,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/tsurutaxi.jpg",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "tsurutaxi",
     "sourceOrder": 7
   },
@@ -3242,7 +3259,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/tsuruhome.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "tsuruhome",
     "sourceOrder": 5
   },
@@ -3259,7 +3276,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/tsurutaxi.jpg",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "tsurutaxi",
     "sourceOrder": 8
   },
@@ -3276,7 +3293,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/tsurutaxi.jpg",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "tsurutaxi",
     "sourceOrder": 9
   },
@@ -3293,7 +3310,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/tsurutaxi.jpg",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "tsurutaxi",
     "sourceOrder": 10
   },
@@ -3310,7 +3327,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/tsurutaxi.jpg",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "tsurutaxi",
     "sourceOrder": 11
   },
@@ -3327,7 +3344,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/tsurutaxi.jpg",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "tsurutaxi",
     "sourceOrder": 12
   },
@@ -3344,7 +3361,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/tsurutaxi.jpg",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "tsurutaxi",
     "sourceOrder": 13
   },
@@ -3361,7 +3378,7 @@
     "important": false,
     "thumbnail": "https://sunlight-zone.com/images/league_02.gif",
     "favicon": "assets/site-icons/sunlight-zone.png",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "sunlight-zone",
     "sourceOrder": 11
   },
@@ -3378,7 +3395,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/tsurutaxi.jpg",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "tsurutaxi",
     "sourceOrder": 14
   },
@@ -3395,7 +3412,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/tsurutaxi.jpg",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "tsurutaxi",
     "sourceOrder": 15
   },
@@ -3412,7 +3429,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/tsurutaxi.jpg",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "tsurutaxi",
     "sourceOrder": 16
   },
@@ -3429,7 +3446,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/tsurutaxi.jpg",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "tsurutaxi",
     "sourceOrder": 17
   },
@@ -3446,7 +3463,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/tsurutaxi.jpg",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "tsurutaxi",
     "sourceOrder": 18
   },
@@ -3463,7 +3480,7 @@
     "important": false,
     "thumbnail": "",
     "favicon": "assets/site-icons/tsurutaxi.jpg",
-    "fetchedAt": "2026-08-27T19:40:04+09:00",
+    "fetchedAt": "2026-08-27T22:58:23+09:00",
     "sourceId": "tsurutaxi",
     "sourceOrder": 19
   }
