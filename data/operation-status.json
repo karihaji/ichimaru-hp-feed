@@ -5,7 +5,7 @@
     "statusLabel": "通常運航",
     "targetDate": "2026-08-29",
     "url": "https://cosmoline.jp/ship-information",
-    "checkedAt": "2026-08-29T18:52:37+09:00",
+    "checkedAt": "2026-08-29T21:13:31+09:00",
     "sourceId": "cosmoline-operation",
     "statusSource": "https://cosmoline.jp/ship-information",
     "statusSourceRole": "official",
@@ -68,50 +68,50 @@
   {
     "type": "operation-status",
     "sourceName": "フェリー屋久島2",
-    "statusLabel": "通常運航",
+    "statusLabel": "運休",
     "targetDate": "2026-08-29",
     "url": "http://www.norimono-info.com/frame_set.php?disp=area&pref=kago",
-    "checkedAt": "2026-08-29T18:52:37+09:00",
+    "checkedAt": "2026-08-29T21:13:31+09:00",
     "sourceId": "ferry-yakusima2-operation",
     "statusSource": "https://ferryyakusima2.com/",
     "statusSourceRole": "official",
     "statusMethod": "status-label",
-    "statusEvidence": "通常運航",
+    "statusEvidence": "運休",
     "statusAgreement": "matched",
     "activeSource": "official",
     "statusReason": "primary-ok",
     "statusChecks": [
       {
-        "statusLabel": "通常運航",
+        "statusLabel": "運休",
         "targetDate": "2026-08-29",
         "statusSource": "https://ferryyakusima2.com/",
         "statusSourceRole": "official",
         "statusMethod": "status-label",
-        "statusEvidence": "通常運航"
+        "statusEvidence": "運休"
       },
       {
-        "statusLabel": "通常運航",
+        "statusLabel": "運休",
         "targetDate": "2026-08-29",
         "statusSource": "https://ferryyakusima2.com/",
         "statusSourceRole": "official",
         "statusMethod": "operation-block",
-        "statusEvidence": "通常運航"
+        "statusEvidence": "運休"
       },
       {
-        "statusLabel": "通常運航",
+        "statusLabel": "運休",
         "targetDate": "2026-08-29",
         "statusSource": "https://ferryyakusima2.com/",
         "statusSourceRole": "official",
         "statusMethod": "operation-block",
-        "statusEvidence": "運行状況 は 通常運航 です。"
+        "statusEvidence": "運行状況 は 運休 です。"
       },
       {
-        "statusLabel": "通常運航",
-        "targetDate": "",
+        "statusLabel": "運休",
+        "targetDate": "2026-08-30",
         "statusSource": "http://www.norimono-info.com/area_main.php?disp=area&pref=kago&lang=",
         "statusSourceRole": "fallback",
         "statusMethod": "matched-block",
-        "statusEvidence": "通常運航"
+        "statusEvidence": "運休"
       }
     ]
   }
