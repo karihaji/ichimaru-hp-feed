@@ -3,65 +3,65 @@
     "type": "operation-status",
     "sourceName": "コスモライン",
     "statusLabel": "欠航",
-    "targetDate": "2026-09-03",
+    "targetDate": "2026-09-04",
     "url": "https://cosmoline.jp/ship-information",
-    "checkedAt": "2026-09-03T19:37:29+09:00",
+    "checkedAt": "2026-09-04T09:04:28+09:00",
     "sourceId": "cosmoline-operation",
     "statusSource": "https://cosmoline.jp/ship-information",
     "statusSourceRole": "official",
     "statusMethod": "operation-block",
-    "statusEvidence": "運航情報 当日の運航状況は朝7時に発表いたします。 1週間先の予定は下記になります。 運航予定ですので変更があった場合は随時更新していきますのでご乗船予定のお客様はご確認の上お越しください。 9/3 海上荒天の為、欠航 9/4 条件付き運航または欠航の可能性有 9/5 通常運航予定 9/6 運休 9/7 通常運航予定 9/8 通常運航予定 9/9 通常運航予",
+    "statusEvidence": "運航情報 当日の運航状況は朝7時に発表いたします。 1週間先の予定は下記になります。 運航予定ですので変更があった場合は随時更新していきますのでご乗船予定のお客様はご確認の上お越しください。 9/4 海上荒天の為、欠航 9/5 条件付き運航または欠航の可能性有 9/6 運休 9/7 通常運航予定 9/8 通常運航予定 9/9 通常運航予定 9/10 通常運航",
     "statusAgreement": "official-only",
     "activeSource": "official",
     "statusReason": "primary-ok",
     "statusChecks": [
       {
         "statusLabel": "欠航",
-        "targetDate": "2026-09-03",
+        "targetDate": "2026-09-04",
         "statusSource": "https://cosmoline.jp/ship-information",
         "statusSourceRole": "official",
         "statusMethod": "operation-block",
-        "statusEvidence": "運航情報 当日の運航状況は朝7時に発表いたします。 1週間先の予定は下記になります。 運航予定ですので変更があった場合は随時更新していきますのでご乗船予定のお客様はご確認の上お越しください。 9/3 海上荒天の為、欠航 9/4 条件付き運航または欠航の可能性有 9/5 通常運航予定 9/6 運休 9/7 通常運航予定 9/8 通常運航予定 9/9 通常運航予"
+        "statusEvidence": "運航情報 当日の運航状況は朝7時に発表いたします。 1週間先の予定は下記になります。 運航予定ですので変更があった場合は随時更新していきますのでご乗船予定のお客様はご確認の上お越しください。 9/4 海上荒天の為、欠航 9/5 条件付き運航または欠航の可能性有 9/6 運休 9/7 通常運航予定 9/8 通常運航予定 9/9 通常運航予定 9/10 通常運航"
       },
       {
         "statusLabel": "欠航",
-        "targetDate": "2026-09-03",
+        "targetDate": "2026-09-04",
         "statusSource": "https://cosmoline.jp/ship-information",
         "statusSourceRole": "official",
         "statusMethod": "dated-status-line",
-        "statusEvidence": "9/3 欠航中 詳しくはこちら MENU 車両航送の ご予約はこちら TEL 099-222-8271"
+        "statusEvidence": "9/4 欠航中 詳しくはこちら MENU 車両航送の ご予約はこちら TEL 099-222-8271"
       },
       {
         "statusLabel": "欠航",
-        "targetDate": "2026-09-03",
+        "targetDate": "2026-09-04",
         "statusSource": "https://cosmoline.jp/ship-information",
         "statusSourceRole": "official",
         "statusMethod": "dated-status-line",
-        "statusEvidence": "9/3 海上荒天の為、欠航 9/4 条件付き運航または欠航の可能性有 9/5 通常運航予定 9/6 運休"
+        "statusEvidence": "9/4 海上荒天の為、欠航 9/5 条件付き運航または欠航の可能性有 9/6 運休 9/7 通常運航予定"
       },
       {
         "statusLabel": "欠航",
-        "targetDate": "2026-09-03",
+        "targetDate": "2026-09-04",
         "statusSource": "https://cosmoline.jp/",
         "statusSourceRole": "official",
         "statusMethod": "dated-status-line",
-        "statusEvidence": "9/3 欠航中 詳しくはこちら MENU 車両航送の ご予約はこちら TEL 099-222-8271"
+        "statusEvidence": "9/4 欠航中 詳しくはこちら MENU 車両航送の ご予約はこちら TEL 099-222-8271"
       },
       {
         "statusLabel": "欠航",
-        "targetDate": "2026-09-03",
+        "targetDate": "2026-09-04",
         "statusSource": "https://cosmoline.jp/ship-information",
         "statusSourceRole": "official",
         "statusMethod": "operation-context",
-        "statusEvidence": "運航情報 - 鹿児島と種子島をフェリー「プリンセスわかさ」の船旅で。 | コスモライン株式会社 鹿児島市錦江町23番4号 --> コスモライン・種子島へフェリープリンセスわかさで3時間30分の船旅 | 鹿児島-種子島間の船旅 --> 九州のりものinfo.com English 中国語 韓国語 ヘルプ --> 運航情報 9/3 欠航中 詳しくはこちら MEN"
+        "statusEvidence": "運航情報 - 鹿児島と種子島をフェリー「プリンセスわかさ」の船旅で。 | コスモライン株式会社 鹿児島市錦江町23番4号 --> コスモライン・種子島へフェリープリンセスわかさで3時間30分の船旅 | 鹿児島-種子島間の船旅 --> 九州のりものinfo.com English 中国語 韓国語 ヘルプ --> 運航情報 9/4 欠航中 詳しくはこちら MEN"
       },
       {
         "statusLabel": "欠航",
-        "targetDate": "2026-09-03",
+        "targetDate": "2026-09-04",
         "statusSource": "https://cosmoline.jp/ship-information",
         "statusSourceRole": "official",
         "statusMethod": "operation-context",
-        "statusEvidence": "フェリープリンセスわかさで3時間30分の船旅 | 鹿児島-種子島間の船旅 --> 九州のりものinfo.com English 中国語 韓国語 ヘルプ --> 運航情報 9/3 欠航中 詳しくはこちら MENU 車両航送の ご予約はこちら TEL 099-222-8271 受付 9:00〜17:00 日祝休み 運賃・ 時刻表 --> --> 乗船までの流れ "
+        "statusEvidence": "フェリープリンセスわかさで3時間30分の船旅 | 鹿児島-種子島間の船旅 --> 九州のりものinfo.com English 中国語 韓国語 ヘルプ --> 運航情報 9/4 欠航中 詳しくはこちら MENU 車両航送の ご予約はこちら TEL 099-222-8271 受付 9:00〜17:00 日祝休み 運賃・ 時刻表 --> --> 乗船までの流れ "
       }
     ]
   },
@@ -69,9 +69,9 @@
     "type": "operation-status",
     "sourceName": "フェリー屋久島2",
     "statusLabel": "欠航",
-    "targetDate": "2026-09-03",
+    "targetDate": "2026-09-04",
     "url": "http://www.norimono-info.com/frame_set.php?disp=area&pref=kago",
-    "checkedAt": "2026-09-03T19:37:29+09:00",
+    "checkedAt": "2026-09-04T09:04:28+09:00",
     "sourceId": "ferry-yakusima2-operation",
     "statusSource": "https://ferryyakusima2.com/",
     "statusSourceRole": "official",
@@ -83,7 +83,7 @@
     "statusChecks": [
       {
         "statusLabel": "欠航",
-        "targetDate": "2026-09-03",
+        "targetDate": "2026-09-04",
         "statusSource": "https://ferryyakusima2.com/",
         "statusSourceRole": "official",
         "statusMethod": "status-label",
@@ -91,7 +91,7 @@
       },
       {
         "statusLabel": "欠航",
-        "targetDate": "2026-09-03",
+        "targetDate": "2026-09-04",
         "statusSource": "https://ferryyakusima2.com/",
         "statusSourceRole": "official",
         "statusMethod": "operation-block",
@@ -99,7 +99,7 @@
       },
       {
         "statusLabel": "欠航",
-        "targetDate": "2026-09-03",
+        "targetDate": "2026-09-04",
         "statusSource": "https://ferryyakusima2.com/",
         "statusSourceRole": "official",
         "statusMethod": "operation-block",
@@ -107,7 +107,7 @@
       },
       {
         "statusLabel": "欠航",
-        "targetDate": "2026-09-03",
+        "targetDate": "2026-09-04",
         "statusSource": "http://www.norimono-info.com/area_main.php?disp=area&pref=kago&lang=",
         "statusSourceRole": "fallback",
         "statusMethod": "matched-block",
