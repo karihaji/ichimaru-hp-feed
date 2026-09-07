@@ -15,17 +15,22 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: update-feed-data-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   update:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: 22
+          package-manager-cache: false
 
       - name: Validate files
         run: npm run validate
@@ -43,4 +48,17 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data
           git commit -m "Update feed data"
-          git push
+          for attempt in 1 2 3; do
+            if git push; then
+              exit 0
+            fi
+
+            if [ "$attempt" -eq 3 ]; then
+              echo "git push failed after ${attempt} attempts"
+              exit 1
+            fi
+
+            sleep_seconds=$((attempt * 15))
+            echo "git push failed; retrying in ${sleep_seconds}s"
+            sleep "$sleep_seconds"
+          done
