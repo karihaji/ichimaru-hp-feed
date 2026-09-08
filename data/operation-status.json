@@ -5,7 +5,7 @@
     "statusLabel": "条件付運航",
     "targetDate": "2026-09-08",
     "url": "https://cosmoline.jp/ship-information",
-    "checkedAt": "2026-09-08T09:23:27+09:00",
+    "checkedAt": "2026-09-08T14:23:29+09:00",
     "sourceId": "cosmoline-operation",
     "statusSource": "https://cosmoline.jp/ship-information",
     "statusSourceRole": "official",
@@ -71,39 +71,23 @@
     "statusLabel": "条件付運航",
     "targetDate": "2026-09-08",
     "url": "http://www.norimono-info.com/frame_set.php?disp=area&pref=kago",
-    "checkedAt": "2026-09-08T09:23:27+09:00",
+    "checkedAt": "2026-09-08T14:23:29+09:00",
     "sourceId": "ferry-yakusima2-operation",
     "statusSource": "https://ferryyakusima2.com/",
     "statusSourceRole": "official",
-    "statusMethod": "status-label",
-    "statusEvidence": "条件付出航",
-    "statusAgreement": "official-only",
+    "statusMethod": "cached-official",
+    "statusEvidence": "条件付運航",
+    "statusAgreement": "cached-with-fallback",
     "activeSource": "official",
-    "statusReason": "primary-ok",
+    "statusReason": "primary-failed-retaining-last",
     "statusChecks": [
       {
-        "statusLabel": "条件付運航",
-        "targetDate": "2026-09-08",
-        "statusSource": "https://ferryyakusima2.com/",
-        "statusSourceRole": "official",
-        "statusMethod": "status-label",
-        "statusEvidence": "条件付出航"
-      },
-      {
-        "statusLabel": "条件付運航",
-        "targetDate": "2026-09-08",
-        "statusSource": "https://ferryyakusima2.com/",
-        "statusSourceRole": "official",
-        "statusMethod": "operation-block",
-        "statusEvidence": "条件付出航"
-      },
-      {
-        "statusLabel": "条件付運航",
-        "targetDate": "2026-09-08",
-        "statusSource": "https://ferryyakusima2.com/",
-        "statusSourceRole": "official",
-        "statusMethod": "operation-block",
-        "statusEvidence": "運行状況 は 条件付出航 です。"
+        "statusLabel": "通常運航",
+        "targetDate": "",
+        "statusSource": "http://www.norimono-info.com/area_main.php?disp=area&pref=kago&lang=",
+        "statusSourceRole": "fallback",
+        "statusMethod": "matched-block",
+        "statusEvidence": "通常運航"
       }
     ]
   }
