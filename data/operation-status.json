@@ -5,12 +5,12 @@
     "statusLabel": "通常運航",
     "targetDate": "2026-10-09",
     "url": "https://cosmoline.jp/ship-information",
-    "checkedAt": "2026-10-09T11:07:08+09:00",
+    "checkedAt": "2026-10-09T15:50:04+09:00",
     "sourceId": "cosmoline-operation",
     "statusSource": "https://cosmoline.jp/ship-information",
     "statusSourceRole": "official",
     "statusMethod": "operation-block",
-    "statusEvidence": "運航情報 当日の運航状況は朝7時に発表いたします。 1週間先の予定は下記になります。 運航予定ですので変更があった場合は随時更新していきますのでご乗船予定のお客様はご確認の上お越しください。 10/9 通常運航予定 10/10 通常運航予定 10/11 運休 10/12 通常運航予定 10/13 通常運航予定 10/14 通常運航予定 10/15 通常運航予",
+    "statusEvidence": "運航情報 当日の運航状況は朝7時に発表いたします。 1週間先の予定は下記になります。 運航予定ですので変更があった場合は随時更新していきますのでご乗船予定のお客様はご確認の上お越しください。 10/9 通常運航予定 10/10 条件付き運航 10/11 運休 10/12 通常運航予定 10/13 通常運航予定 10/14 通常運航予定 10/15 通常運航予",
     "statusAgreement": "official-only",
     "activeSource": "official",
     "statusReason": "primary-ok",
@@ -21,7 +21,7 @@
         "statusSource": "https://cosmoline.jp/ship-information",
         "statusSourceRole": "official",
         "statusMethod": "operation-block",
-        "statusEvidence": "運航情報 当日の運航状況は朝7時に発表いたします。 1週間先の予定は下記になります。 運航予定ですので変更があった場合は随時更新していきますのでご乗船予定のお客様はご確認の上お越しください。 10/9 通常運航予定 10/10 通常運航予定 10/11 運休 10/12 通常運航予定 10/13 通常運航予定 10/14 通常運航予定 10/15 通常運航予"
+        "statusEvidence": "運航情報 当日の運航状況は朝7時に発表いたします。 1週間先の予定は下記になります。 運航予定ですので変更があった場合は随時更新していきますのでご乗船予定のお客様はご確認の上お越しください。 10/9 通常運航予定 10/10 条件付き運航 10/11 運休 10/12 通常運航予定 10/13 通常運航予定 10/14 通常運航予定 10/15 通常運航予"
       },
       {
         "statusLabel": "通常運航",
@@ -37,7 +37,7 @@
         "statusSource": "https://cosmoline.jp/ship-information",
         "statusSourceRole": "official",
         "statusMethod": "dated-status-line",
-        "statusEvidence": "10/9 通常運航予定 10/10 通常運航予定 10/11 運休 10/12 通常運航予定 10/13"
+        "statusEvidence": "10/9 通常運航予定 10/10 条件付き運航 10/11 運休 10/12 通常運航予定 10/13"
       },
       {
         "statusLabel": "通常運航",
@@ -68,42 +68,50 @@
   {
     "type": "operation-status",
     "sourceName": "フェリー屋久島2",
-    "statusLabel": "条件付運航",
+    "statusLabel": "通常運航",
     "targetDate": "2026-10-09",
     "url": "http://www.norimono-info.com/frame_set.php?disp=area&pref=kago",
-    "checkedAt": "2026-10-09T11:07:08+09:00",
+    "checkedAt": "2026-10-09T15:50:04+09:00",
     "sourceId": "ferry-yakusima2-operation",
     "statusSource": "https://ferryyakusima2.com/",
     "statusSourceRole": "official",
     "statusMethod": "status-label",
-    "statusEvidence": "条件付出航",
-    "statusAgreement": "official-only",
+    "statusEvidence": "通常運航",
+    "statusAgreement": "matched",
     "activeSource": "official",
     "statusReason": "primary-ok",
     "statusChecks": [
       {
-        "statusLabel": "条件付運航",
+        "statusLabel": "通常運航",
         "targetDate": "2026-10-09",
         "statusSource": "https://ferryyakusima2.com/",
         "statusSourceRole": "official",
         "statusMethod": "status-label",
-        "statusEvidence": "条件付出航"
+        "statusEvidence": "通常運航"
       },
       {
-        "statusLabel": "条件付運航",
+        "statusLabel": "通常運航",
         "targetDate": "2026-10-09",
         "statusSource": "https://ferryyakusima2.com/",
         "statusSourceRole": "official",
         "statusMethod": "operation-block",
-        "statusEvidence": "条件付出航"
+        "statusEvidence": "通常運航"
       },
       {
-        "statusLabel": "条件付運航",
+        "statusLabel": "通常運航",
         "targetDate": "2026-10-09",
         "statusSource": "https://ferryyakusima2.com/",
         "statusSourceRole": "official",
         "statusMethod": "operation-block",
-        "statusEvidence": "運行状況 は 条件付出航 です。"
+        "statusEvidence": "運行状況 は 通常運航 です。"
+      },
+      {
+        "statusLabel": "通常運航",
+        "targetDate": "",
+        "statusSource": "http://www.norimono-info.com/area_main.php?disp=area&pref=kago&lang=",
+        "statusSourceRole": "fallback",
+        "statusMethod": "matched-block",
+        "statusEvidence": "通常運航"
       }
     ]
   }
