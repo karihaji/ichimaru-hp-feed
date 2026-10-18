@@ -5,7 +5,7 @@
     "statusLabel": "運休",
     "targetDate": "2026-10-18",
     "url": "https://cosmoline.jp/ship-information",
-    "checkedAt": "2026-10-18T16:53:25+09:00",
+    "checkedAt": "2026-10-18T19:19:28+09:00",
     "sourceId": "cosmoline-operation",
     "statusSource": "https://cosmoline.jp/ship-information",
     "statusSourceRole": "official",
@@ -71,40 +71,15 @@
     "statusLabel": "運休",
     "targetDate": "2026-10-18",
     "url": "http://www.norimono-info.com/frame_set.php?disp=area&pref=kago",
-    "checkedAt": "2026-10-18T16:53:25+09:00",
+    "checkedAt": "2026-10-18T19:19:28+09:00",
     "sourceId": "ferry-yakusima2-operation",
     "statusSource": "https://ferryyakusima2.com/",
     "statusSourceRole": "official",
-    "statusMethod": "status-label",
+    "statusMethod": "cached-official",
     "statusEvidence": "運休",
-    "statusAgreement": "official-only",
+    "statusAgreement": "cached-official",
     "activeSource": "official",
-    "statusReason": "primary-ok",
-    "statusChecks": [
-      {
-        "statusLabel": "運休",
-        "targetDate": "2026-10-18",
-        "statusSource": "https://ferryyakusima2.com/",
-        "statusSourceRole": "official",
-        "statusMethod": "status-label",
-        "statusEvidence": "運休"
-      },
-      {
-        "statusLabel": "運休",
-        "targetDate": "2026-10-18",
-        "statusSource": "https://ferryyakusima2.com/",
-        "statusSourceRole": "official",
-        "statusMethod": "operation-block",
-        "statusEvidence": "運休"
-      },
-      {
-        "statusLabel": "運休",
-        "targetDate": "2026-10-18",
-        "statusSource": "https://ferryyakusima2.com/",
-        "statusSourceRole": "official",
-        "statusMethod": "operation-block",
-        "statusEvidence": "運行状況 は 運休 です。"
-      }
-    ]
+    "statusReason": "primary-failed-retaining-last",
+    "statusChecks": []
   }
 ]
