@@ -5,12 +5,12 @@
     "statusLabel": "通常運航",
     "targetDate": "2026-11-27",
     "url": "https://cosmoline.jp/ship-information",
-    "checkedAt": "2026-11-27T13:13:32+09:00",
+    "checkedAt": "2026-11-27T18:10:05+09:00",
     "sourceId": "cosmoline-operation",
     "statusSource": "https://cosmoline.jp/ship-information",
     "statusSourceRole": "official",
     "statusMethod": "operation-block",
-    "statusEvidence": "運航情報 当日の運航状況は朝7時に発表いたします。 1週間先の予定は下記になります。 運航予定ですので変更があった場合は随時更新していきますのでご乗船予定のお客様はご確認の上お越しください。 11/27 通常運航予定 11/28 通常運航予定 11/29 運休 11/30 通常運航予定 12/1 通常運航予定 12/2 通常運航予定 12/3 通常運航予定",
+    "statusEvidence": "運航情報 当日の運航状況は朝7時に発表いたします。 1週間先の予定は下記になります。 運航予定ですので変更があった場合は随時更新していきますのでご乗船予定のお客様はご確認の上お越しください。 11/27 通常運航予定 11/28 海上荒天の為、欠航 11/29 運休 11/30 通常運航予定 12/1 通常運航予定 12/2 通常運航予定 12/3 通常運航",
     "statusAgreement": "official-only",
     "activeSource": "official",
     "statusReason": "primary-ok",
@@ -21,7 +21,7 @@
         "statusSource": "https://cosmoline.jp/ship-information",
         "statusSourceRole": "official",
         "statusMethod": "operation-block",
-        "statusEvidence": "運航情報 当日の運航状況は朝7時に発表いたします。 1週間先の予定は下記になります。 運航予定ですので変更があった場合は随時更新していきますのでご乗船予定のお客様はご確認の上お越しください。 11/27 通常運航予定 11/28 通常運航予定 11/29 運休 11/30 通常運航予定 12/1 通常運航予定 12/2 通常運航予定 12/3 通常運航予定"
+        "statusEvidence": "運航情報 当日の運航状況は朝7時に発表いたします。 1週間先の予定は下記になります。 運航予定ですので変更があった場合は随時更新していきますのでご乗船予定のお客様はご確認の上お越しください。 11/27 通常運航予定 11/28 海上荒天の為、欠航 11/29 運休 11/30 通常運航予定 12/1 通常運航予定 12/2 通常運航予定 12/3 通常運航"
       },
       {
         "statusLabel": "通常運航",
@@ -37,7 +37,7 @@
         "statusSource": "https://cosmoline.jp/ship-information",
         "statusSourceRole": "official",
         "statusMethod": "dated-status-line",
-        "statusEvidence": "11/27 通常運航予定 11/28 通常運航予定 11/29 運休 11/30 通常運航予定 12/1 通"
+        "statusEvidence": "11/27 通常運航予定 11/28 海上荒天の為、欠航 11/29 運休 11/30 通常運航予定 12/"
       },
       {
         "statusLabel": "通常運航",
@@ -71,7 +71,7 @@
     "statusLabel": "通常運航",
     "targetDate": "2026-11-27",
     "url": "http://www.norimono-info.com/frame_set.php?disp=area&pref=kago",
-    "checkedAt": "2026-11-27T13:13:32+09:00",
+    "checkedAt": "2026-11-27T18:10:05+09:00",
     "sourceId": "ferry-yakusima2-operation",
     "statusSource": "https://ferryyakusima2.com/",
     "statusSourceRole": "official",
